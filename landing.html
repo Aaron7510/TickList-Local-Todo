@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TickList — 今天要做什么，一眼就清楚</title>
+<meta name="description" content="记下任务，安排时间，专注眼前这一件。TickList 帮你把每天的事情整理成一张清晰的清单。无需注册，支持本地保存与导出备份。把今天，一件件做好。">
+<link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<script src="assets/language.js"></script>
+<link rel="stylesheet" href="assets/language.css">
+<style>
+  :root {
+    --bg: #f7f8fb;
+    --card: #ffffff;
+    --border: #e8eaf0;
+    --text: #14171f;
+    --muted: #5d6573;
+    --faint: #97a0b0;
+    --accent: #4f6ef7;
+    --accent-dark: #3d5ae0;
+    --accent-soft: #eef1ff;
+    --radius: 14px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+      "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: var(--text);
+    background:
+      radial-gradient(1100px 520px at 50% -180px, #dfe5ff 0%, rgba(223,229,255,0) 70%),
+      var(--bg);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  /* 首屏只增加底部空间，沿用导航和正文原来的排版起点。 */
+  .intro-page { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
+  .intro-page:focus { outline: none; }
+  .intro-page > nav, .intro-page > .hero { flex-shrink: 0; }
+  .scroll-cue {
+    display: flex; flex-direction: column; align-items: center; align-self: center;
+    gap: 8px; margin-top: auto; padding: 24px 16px 40px;
+    color: var(--muted); text-decoration: none; text-align: center;
+  }
+  .scroll-cue span { font-size: 12px; }
+  .scroll-cue .cue-motion {
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    --float-offset: 6px;
+  }
+  .scroll-cue .cue-motion, .back-top-motion {
+    animation: cue-float 2.7s ease-in-out infinite;
+  }
+  @keyframes cue-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(var(--float-offset, 6px)); }
+  }
+  .scroll-cue svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .scroll-cue:hover { color: var(--accent); }
+  .scroll-cue:focus-visible { outline: 2px solid var(--accent); outline-offset: -8px; border-radius: 12px; }
+
+  /* 锚点与测量放在静态外层，避免位移动画改变滚动定位或进度。 */
+  .product-page { padding-top: 64px; }
+  .product-reveal {
+    opacity: var(--product-opacity, 1);
+    transform: translateY(var(--product-offset, 0px));
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .product-reveal { opacity: 1; transform: none; }
+    .scroll-cue .cue-motion { animation: none; transform: none; }
+    .chip { animation: none; }
+    .btn-primary { transition: none; }
+    .btn-primary:hover { transform: none; }
+  }
+
+  /* ---------- 顶部导航 ---------- */
+  nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 22px 0;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; font-size: 19px; font-weight: 700; }
+  .brand-logo { display: block; width: 139px; height: 32px; }
+  .language-picker { height: 32px; }
+
+  /* ---------- 首屏 ---------- */
+  .hero { text-align: center; padding: 56px 0 0; }
+
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 600; color: var(--accent);
+    background: var(--accent-soft); border: 1px solid #dde4ff;
+    padding: 7px 15px; border-radius: 999px; margin-bottom: 26px;
+  }
+  .badge .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+
+  h1 {
+    font-size: 52px; line-height: 1.18; font-weight: 800;
+    letter-spacing: -0.5px; max-width: 760px; margin: 0 auto;
+  }
+  h1 .hl, .brand-tagline .hl {
+    background: linear-gradient(120deg, var(--accent), #8a6cf5);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+
+  .sub {
+    margin: 22px auto 0; max-width: 600px;
+    font-size: 18px; line-height: 1.7; color: var(--muted);
+  }
+  .sub strong { color: var(--text); font-weight: 600; }
+
+  .cta-row {
+    display: flex; align-items: center; justify-content: center;
+    gap: 22px; margin-top: 36px; flex-wrap: wrap;
+  }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-size: 17px; font-weight: 700; color: #fff;
+    background: var(--accent); padding: 15px 34px; border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 10px 26px rgba(79, 110, 247, 0.32);
+    transition: transform .15s, box-shadow .15s, background .15s;
+  }
+  .btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 14px 32px rgba(79, 110, 247, 0.4); }
+  .btn-primary svg { width: 17px; height: 17px; fill: none; stroke: #fff; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+
+  .link-ghost {
+    font-size: 15px; font-weight: 600; color: var(--muted);
+    text-decoration: none; border-bottom: 1.5px solid #d3d8e3;
+    padding-bottom: 2px; transition: all .15s;
+  }
+  .link-ghost:hover { color: var(--accent); border-color: var(--accent); }
+
+  .trust {
+    margin-top: 18px; font-size: 13px; color: var(--faint);
+  }
+
+  /* ---------- 产品截图证据 ---------- */
+  .proof { position: relative; padding-bottom: 30px; }
+
+  .proof-label {
+    position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+    z-index: 3; background: var(--text); color: #fff; font-size: 12px;
+    font-weight: 600; padding: 6px 14px; border-radius: 999px; white-space: nowrap;
+  }
+
+  .browser {
+    width: 100%; margin: 0 auto;
+    background: var(--card); border-radius: 16px; overflow: hidden;
+    border: 1px solid #dfe3ec;
+    box-shadow:
+      0 40px 80px -24px rgba(31, 41, 74, 0.28),
+      0 12px 28px -12px rgba(31, 41, 74, 0.18);
+  }
+  .browser-bar {
+    display: flex; align-items: center; gap: 8px;
+    padding: 13px 16px; background: #f3f4f8; border-bottom: 1px solid #e6e9f1;
+  }
+  .browser-bar i { width: 11px; height: 11px; border-radius: 50%; display: block; }
+  .browser-bar i:nth-child(1) { background: #ff5f57; }
+  .browser-bar i:nth-child(2) { background: #febc2e; }
+  .browser-bar i:nth-child(3) { background: #28c840; }
+  .url {
+    flex: 1; margin-left: 12px; background: #fff; border: 1px solid #e3e6ee;
+    border-radius: 8px; height: 26px; max-width: 340px;
+    display: flex; align-items: center; padding: 0 12px;
+    font-size: 12px; color: var(--faint); gap: 7px;
+  }
+  .url svg { width: 12px; height: 12px; fill: none; stroke: #97a0b0; stroke-width: 2; }
+
+  .shot { display: block; width: 100%; height: auto; }
+
+  /* 浮动小标签 */
+  .chip {
+    position: absolute; z-index: 2;
+    background: var(--card); border: 1px solid #e3e6ee;
+    border-radius: 12px; padding: 12px 16px;
+    box-shadow: 0 14px 34px -10px rgba(31, 41, 74, 0.25);
+    font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 9px;
+    animation: float 5s ease-in-out infinite;
+  }
+  .chip svg { width: 17px; height: 17px; flex-shrink: 0; }
+  .chip.local { left: -18px; top: 30%; }
+  .chip.local svg { stroke: var(--accent); fill: none; stroke-width: 2; }
+  .chip.dark { right: -18px; top: 52%; animation-delay: 1.2s; }
+  .chip.dark svg { stroke: #8a6cf5; fill: none; stroke-width: 2; }
+  .chip small { display: block; font-weight: 400; color: var(--faint); font-size: 11px; margin-top: 1px; }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-9px); }
+  }
+
+  .benefits { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin: 48px 0 0; }
+  .benefit { padding: 28px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
+  .benefit h2 { margin-bottom: 12px; font-size: 20px; line-height: 1.5; letter-spacing: -0.2px; }
+  .benefit p { color: var(--muted); font-size: 15px; line-height: 1.8; }
+  .brand-tagline { margin-bottom: 10px; color: var(--text); font-size: 16px; font-weight: 800; line-height: 1.18; letter-spacing: -0.5px; }
+  .product-note { font-size: 12px; line-height: 1.7; color: var(--muted); text-align: center; }
+
+  footer {
+    text-align: center; padding: 26px 0 40px;
+    font-size: 13px; color: var(--faint);
+  }
+  .back-to-top {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 18px; padding: 8px 12px; border-radius: 8px;
+    color: var(--accent); font-size: 13px; font-weight: 600; text-decoration: none;
+    transition: background .15s, color .15s;
+  }
+  .back-to-top svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .back-to-top:hover { background: var(--accent-soft); color: var(--accent-dark); }
+  .back-to-top:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .back-top-motion { display: inline-flex; align-items: center; gap: 6px; --float-offset: -5.8px; }
+  @media (prefers-reduced-motion: reduce) {
+    .back-top-motion { animation: none; transform: none; }
+  }
+
+  @media (max-width: 860px) {
+    .chip.local { left: 0; }
+    .chip.dark { right: 0; }
+  }
+  @media (max-width: 640px) {
+    .hero { padding-top: 36px; }
+    h1 { font-size: 34px; }
+    .sub { font-size: 16px; }
+    .btn-primary { width: 100%; justify-content: center; }
+    .cta-row { gap: 14px; }
+    .chip { display: none; }
+    .url { display: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="intro-page" id="top" tabindex="-1">
+    <!-- 顶部保留品牌，清单入口集中在首屏 -->
+    <nav>
+      <div class="brand">
+        <img class="brand-logo" src="assets/brand/logo-light.svg" alt="TickList" width="139" height="32">
+      </div>
+      <div class="language-picker">
+        <button id="languageBtn" class="language-btn" type="button" aria-label="选择语言" title="选择语言" data-i18n-aria="languageLabel" aria-expanded="false" aria-controls="languageOptions" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a18 18 0 0 1 0 18 18 18 0 0 1 0-18"/></svg>
+        </button>
+        <div id="languageOptions" class="language-options" role="group" aria-label="选择语言" data-i18n-aria="languageLabel" hidden>
+          <button type="button" data-language="zh" lang="zh-CN" aria-pressed="true">中文</button>
+          <button type="button" data-language="en" lang="en" aria-pressed="false">English</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 首屏：5 秒内能回答「为谁 · 解决什么 · 结果 · 怎么开始」 -->
+    <header class="hero">
+      <div class="badge"><span class="dot"></span><span data-i18n="badge">日常待办，轻松安排</span></div>
+
+      <h1><span data-i18n="headlineLead">今天要做什么，</span><br><span class="hl" data-i18n="headlineHighlight">一眼就清楚。</span></h1>
+
+      <p class="sub">
+        <span data-i18n="descriptionLead">记下任务，安排时间，专注眼前这一件。</span><br>
+        <span data-i18n="descriptionPrefix">TickList 帮你把每天的事情整理成</span><strong data-i18n="descriptionHighlight">一张清晰的清单</strong><span data-i18n="descriptionSuffix">。</span>
+      </p>
+
+      <div class="cta-row">
+        <a class="btn-primary" href="index.html" data-language-link>
+          <span data-i18n="start">开始记录今天</span>
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="link-ghost" href="#proof" data-i18n="seeProduct">看看清单长什么样</a>
+      </div>
+      <p class="trust" data-i18n="trust">无需注册 · 本地保存 · 支持备份</p>
+    </header>
+
+    <a class="scroll-cue" href="#proof">
+      <span class="cue-motion">
+        <span data-i18n="scrollDown">向下滑动，查看产品详情</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg>
+      </span>
+    </a>
+    </div>
+
+    <section class="product-page" id="proof" aria-label="产品展示与主要优势" data-i18n-aria="productLabel">
+    <div class="product-reveal" id="productReveal">
+    <!-- 按实际组件制作的矢量宣传界面 -->
+    <section class="proof">
+      <div class="proof-label" data-i18n="proofLabel">你的今天，可以这样清晰</div>
+
+      <div class="chip local">
+        <svg viewBox="0 0 24 24"><path d="M20 6v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+        <span><span data-i18n="localSave">本地保存</span><small data-i18n="backupRestore">支持备份恢复</small></span>
+      </div>
+      <div class="chip dark">
+        <svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <span><span data-i18n="colorModes">深浅色模式</span><small data-i18n="followSystem">自动跟随系统</small></span>
+      </div>
+
+      <div class="browser">
+        <div class="browser-bar">
+          <i></i><i></i><i></i>
+          <div class="url">
+            <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+            <span data-i18n="browserTitle">TickList · 本地待办清单</span>
+          </div>
+        </div>
+        <img class="shot" src="assets/brand/product-promo.svg" width="1440" height="929" data-i18n-alt="productAlt" alt="TickList 待办清单界面示例：三项任务、一项已完成，展示添加、筛选、截止时间、独立拖动手柄与设置入口">
+      </div>
+    </section>
+
+    <p class="product-note" data-i18n="productNote">数据保存在当前浏览器，建议定期备份。</p>
+
+    <section class="benefits" aria-label="用清单安排今天" data-i18n-aria="benefitsLabel">
+      <article class="benefit">
+        <h2><span data-i18n="captureLead">先记下来，</span><br><span data-i18n="captureHighlight">给脑袋腾点空间。</span></h2>
+        <p data-i18n="captureDescription">临时想到的事、今天的安排，都有地方安放。</p>
+      </article>
+      <article class="benefit">
+        <h2><span data-i18n="orderLead">排好顺序，</span><br><span data-i18n="orderHighlight">知道下一步做什么。</span></h2>
+        <p data-i18n="orderDescription">拖动任务调整顺序，为重要的事设好截止时间。</p>
+      </article>
+      <article class="benefit">
+        <h2><span data-i18n="progressLead">打一个勾，</span><br><span data-i18n="progressHighlight">看见自己的进展。</span></h2>
+        <p data-i18n="progressDescription">切换“未完成”，继续眼前的事；打开“已完成”，看看今天做到了什么。</p>
+      </article>
+    </section>
+
+    <footer>
+      <p class="brand-tagline"><span data-i18n="taglineLead">把今天，</span><span class="hl" data-i18n="taglineHighlight">一件件做好。</span></p>
+      <p>TickList · Developed by Soren</p>
+      <a class="back-to-top" href="#top">
+        <span class="back-top-motion">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V4m-6 6 6-6 6 6"/></svg>
+          <span data-i18n="backTop">回到顶部</span>
+        </span>
+      </a>
+    </footer>
+    </div>
+    </section>
+  </div>
+  <script src="assets/landing-i18n.js"></script>
+  <script src="assets/landing.js"></script>
+</body>
+</html>

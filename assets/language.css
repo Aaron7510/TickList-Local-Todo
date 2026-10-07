@@ -1,0 +1,26 @@
+.language-picker { position: relative; display: inline-flex; align-items: center; height: 38px; }
+.language-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; padding: 0; border: none;
+  border-radius: 50%; background: transparent; color: var(--language-muted, #9aa1af);
+  cursor: pointer; transition: color .18s ease, transform .18s ease;
+}
+.language-btn svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.language-btn:hover, .language-btn[aria-expanded="true"] { color: var(--accent); transform: translateY(-2px); }
+.language-btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.language-options {
+  position: absolute; right: 0; top: calc(100% + 10px); z-index: 5;
+  min-width: 140px; padding: 6px; border: 1px solid var(--border);
+  border-radius: 12px; background: var(--card); box-shadow: 0 8px 24px rgba(31, 41, 74, .12);
+}
+.language-options button {
+  display: block; width: 100%; padding: 9px 12px; border: none; border-radius: 7px;
+  background: transparent; color: var(--language-text, var(--muted)); font: inherit; font-size: 13px;
+  text-align: left; cursor: pointer;
+}
+.language-options button:hover, .language-options button[aria-pressed="true"] { background: var(--language-soft, var(--accent-soft)); color: var(--accent); }
+.language-options button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+@media (prefers-reduced-motion: reduce) {
+  .language-btn { transition: none; }
+  .language-btn:hover, .language-btn[aria-expanded="true"] { transform: none; }
+}

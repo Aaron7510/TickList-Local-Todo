@@ -1,0 +1,14 @@
+{
+  "name": "ticklist",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "A desktop to-do list with local browser storage.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node tests/storage-test.js && node tests/language-test.js && node tests/smoke-test.js && node tests/landing-test.js",
+    "check": "node tools/check-project.js && npm test",
+    "serve": "node tools/serve.js",
+    "package": "node tools/build-release.js"
+  }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TickList — 待办清单</title>
+<meta name="description" content="TickList，打开即用的本地待办清单。把今天，一件件做好。由 Soren 开发。">
+<link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<script src="assets/language.js"></script>
+<script src="assets/theme.js"></script>
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/language.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="landing.html" data-language-link aria-label="TickList，返回首页" title="返回首页">
+      <img class="logo-image logo-image-light" src="assets/brand/logo-light.svg" alt="TickList" width="122" height="28">
+      <img class="logo-image logo-image-dark" src="assets/brand/logo-dark.svg" alt="TickList" width="122" height="28">
+    </a>
+    <button id="themeBtn" class="theme-btn" aria-label="切换颜色模式" title="切换为夜间模式">
+      <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+      <svg class="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+    </button>
+    <div class="language-picker">
+      <button id="languageBtn" class="language-btn" type="button" aria-label="选择语言" title="选择语言" aria-expanded="false" aria-controls="languageOptions" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a18 18 0 0 1 0 18 18 18 0 0 1 0-18"/></svg>
+      </button>
+      <div id="languageOptions" class="language-options" role="group" aria-label="选择语言" hidden>
+        <button type="button" data-language="zh" lang="zh-CN" aria-pressed="true">中文</button>
+        <button type="button" data-language="en" lang="en" aria-pressed="false">English</button>
+      </div>
+    </div>
+    <button id="settingsBtn" class="settings-btn" type="button" aria-label="设置" title="设置" aria-haspopup="dialog" aria-controls="settingsDialog" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 3-.6 2.3-2 .9-2.1-.7-2.5 4.3L4 11.4v2.2l-1.7 1.6 2.5 4.3 2.1-.7 2 .9.6 2.3h5l.6-2.3 2-.9 2.1.7 2.5-4.3-1.7-1.6v-2.2l1.7-1.6-2.5-4.3-2.1.7-2-.9L14.5 3z"/><circle cx="12" cy="12" r="3"/></svg>
+    </button>
+  </header>
+
+  <div id="app" class="app">
+    <h1>待办清单</h1>
+    <div class="subtitle">把今天，一件件做好。</div>
+    <p id="saveWarning" class="save-warning" role="alert" hidden>浏览器无法保存数据。当前修改只在本页暂存，关闭或刷新后可能丢失。请打开右上角“设置”，点击“备份数据”保存副本。</p>
+
+    <div class="input-wrap">
+      <input id="input" type="text" placeholder="添加新的待办事项…" maxlength="200">
+      <button id="addBtn">添加</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter active" data-filter="all" aria-pressed="true">全部</button>
+      <button class="filter" data-filter="pending" aria-pressed="false">未完成</button>
+      <button class="filter" data-filter="done" aria-pressed="false">已完成</button>
+    </div>
+
+    <ul id="list"></ul>
+
+    <div class="footer">
+      <div class="right">
+        <span class="counter" id="remain">共 1 项，已完成 0 项</span>
+        <button id="clearDone">清除已完成</button>
+      </div>
+    </div>
+  </div>
+  <div id="undoToast" class="undo-toast" role="status" hidden>
+    <span id="undoMessage"></span><button id="undoBtn">撤销</button>
+  </div>
+  <dialog id="settingsDialog" class="settings-dialog" aria-labelledby="settingsTitle" aria-describedby="settingsDescription">
+    <div class="settings-heading">
+      <h2 id="settingsTitle">设置</h2>
+      <button id="settingsClose" class="settings-close" type="button" aria-label="关闭设置" autofocus>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <p id="settingsDescription" class="settings-description">数据保存在当前浏览器，建议定期备份。</p>
+    <section class="settings-group" aria-labelledby="settingsDataTitle">
+      <h3 id="settingsDataTitle">数据</h3>
+      <div class="settings-actions">
+        <button id="backupBtn" class="settings-action" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"/></svg>
+          <span><strong>备份数据</strong><small>保存完整清单，方便日后恢复</small></span>
+        </button>
+        <button id="restoreBtn" class="settings-action" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3m-4 4 4-4 4 4M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"/></svg>
+          <span><strong>恢复数据</strong><small>从备份文件恢复清单</small></span>
+        </button>
+        <input id="restoreFile" type="file" accept=".json,application/json" hidden>
+      </div>
+    </section>
+    <section class="settings-group" aria-labelledby="settingsExportTitle">
+      <h3 id="settingsExportTitle">导出</h3>
+      <div class="settings-actions">
+        <button id="exportBtn" class="settings-action" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zM14 3v6h6M8 13h8M8 17h5"/></svg>
+          <span><strong>导出 Markdown</strong><small>将清单保存为可阅读的文档</small></span>
+        </button>
+      </div>
+    </section>
+    <p class="settings-credit">TickList · Developed by Soren</p>
+  </dialog>
+  <dialog id="detailsDialog" class="settings-dialog task-dialog" aria-labelledby="detailsTitle">
+    <div class="settings-heading">
+      <h2 id="detailsTitle">任务详情</h2>
+      <button id="detailsClose" class="settings-close" type="button" aria-label="关闭任务详情" autofocus>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="detail-editor">
+      <label for="detailText">任务名称</label>
+      <input id="detailText" class="detail-input" type="text" maxlength="200" required aria-describedby="detailNameError">
+      <p id="detailNameError" class="detail-error" role="alert" hidden></p>
+      <label for="detailDescription">详细说明</label>
+      <textarea id="detailDescription" class="detail-input" rows="4" maxlength="5000" placeholder="填写任务的具体内容、步骤或补充说明（选填）"></textarea>
+    </div>
+    <p id="detailStatus" class="detail-status" role="status"></p>
+    <dl class="detail-fields">
+      <dt>创建时间</dt><dd id="detailCreated"></dd>
+      <dt><label for="detailDeadline">截止时间</label></dt>
+      <dd class="detail-deadline">
+        <input id="detailDeadline" class="time-input" type="datetime-local">
+        <button id="detailClear" class="detail-clear" type="button">清除</button>
+      </dd>
+    </dl>
+    <p class="settings-description">名称与说明离开输入框后自动保存，截止时间更改后自动保存。</p>
+    <p id="detailSaveWarning" class="save-warning" role="alert" hidden>浏览器无法保存数据，当前修改只在本页暂存。请关闭详情后，在“设置”中备份数据。</p>
+  </dialog>
+
+  <dialog id="deadlineDialog" class="settings-dialog deadline-dialog" aria-labelledby="deadlineTitle">
+    <div class="settings-heading">
+      <h2 id="deadlineTitle">设置截止时间</h2>
+      <button id="deadlineClose" class="settings-close" type="button" aria-label="关闭截止时间设置">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <p id="deadlineTask" class="deadline-task"></p>
+    <label class="deadline-label" for="deadlineInput">截止时间</label>
+    <div class="detail-deadline">
+      <input id="deadlineInput" class="time-input" type="datetime-local" autofocus>
+      <button id="deadlineClear" class="detail-clear" type="button">清除</button>
+    </div>
+    <p class="settings-description deadline-hint">更改后自动保存。</p>
+    <p id="deadlineSaveWarning" class="save-warning" role="alert" hidden>浏览器无法保存数据，当前修改只在本页暂存。请在“设置”中备份数据。</p>
+  </dialog>
+
+<script src="assets/storage.js"></script>
+<script src="assets/drag.js"></script>
+<script src="assets/app-i18n.js"></script>
+<script src="assets/app.js"></script>
+
+</body></html>

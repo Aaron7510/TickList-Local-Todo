@@ -1,0 +1,10 @@
+{
+  "format": "aaron-todo-backup",
+  "version": 1,
+  "exportedAt": "2026-10-06T12:00:00.000Z",
+  "todos": [
+    {"id":"demo-study","text":"整理今天的学习笔记","description":"先整理重点，再列出下一步。\n仅用于公开演示。","done":false,"deadline":"2026-10-05T20:00","createdAt":"2026-10-06T12:00:00.000Z"},
+    {"id":"demo-time","text":"为重要的事留出时间","description":"","done":false,"deadline":"","createdAt":"2026-10-06T12:00:00.000Z"},
+    {"id":"demo-done","text":"完成一件小事","description":"","done":true,"deadline":"","createdAt":"2026-10-06T12:00:00.000Z"}
+  ]
+}
