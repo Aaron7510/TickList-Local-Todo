@@ -54,36 +54,42 @@ const landing = svg(1280, 720, 'TickList 产品介绍页（Landing）', [
   '<path d="M640 663v16m-6-6 6 6 6-6" fill="none" stroke="#5d6573" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>'
 ].join('\n'), '<radialGradient id="hero-glow" cx="50%" cy="0" r="70%"><stop stop-color="#dfe5ff" stop-opacity="0.65"/><stop offset="1" stop-color="#f7f8fb" stop-opacity="0"/></radialGradient><linearGradient id="headline-ink"><stop stop-color="#4f6ef7"/><stop offset="1" stop-color="#8a6cf5"/></linearGradient><filter id="cta-shadow" x="-30%" y="-50%" width="160%" height="230%"><feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#4f6ef7" flood-opacity="0.32"/></filter>');
 const tasks = JSON.parse(fs.readFileSync(path.join(root, 'tests/fixtures/valid-backup.json'), 'utf8')).todos;
-const left = 200, right = 760;
+// Edge measured at 1440 x 900 with this public fixture: .app 560 x 482,
+// x=440, y=173; input y=259; filters y=323; first task y=374.5.
+// Preserve the full desktop viewport and CSS pixel sizes instead of cropping in.
+const appViewport = { width: 1440, height: 900 };
+const appWidth = Number(appCss.match(/\.app\s*\{[^}]*max-width:\s*(\d+)px/)[1]);
+const left = (appViewport.width - appWidth) / 2, right = left + appWidth;
+const appTop = appViewport.height * 0.46 - 482 / 2;
 const rows = tasks.map((task, index) => {
-  const y = 276 + index * 84;
+  const y = appTop + 201.5 + index * 84;
   const deadlineColor = task.deadline && !task.done ? color('red') : muted;
   const deadlineLabel = task.deadline
     ? `${Number(task.deadline.slice(5, 7))}月${Number(task.deadline.slice(8, 10))}日 ${task.deadline.slice(11, 16)}`
     : '设置截止时间';
   return [
-    rect(left, y, 560, 72, 14, color('card'), `stroke="${color('border')}" filter="url(#task-shadow)"`),
-    `<circle cx="228" cy="${y + 36}" r="10" fill="${task.done ? color('green') : color('card')}" stroke="${task.done ? color('green') : color('border')}" stroke-width="2"/>`,
-    task.done ? `<path d="m224 ${y + 36} 3 3 5-6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>` : '',
-    text(250, y + 29, task.text, 15, task.done ? muted : ink, task.done ? 'text-decoration="line-through"' : ''),
-    `<svg x="250" y="${y + 42}" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="${deadlineColor}" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="13" r="7"/><path d="M12 9v4l3 2M5 3 2 6m17-3 3 3"/></svg>`,
-    text(271, y + 53, deadlineLabel, 12, deadlineColor),
-    `<g fill="${muted}">${[0, 6, 12].map(dy => `<circle cx="685" cy="${y + 30 + dy}" r="1.3"/><circle cx="691" cy="${y + 30 + dy}" r="1.3"/>`).join('')}</g>`,
-    text(729, y + 41, '×', 18, muted, centered)
+    rect(left, y, appWidth, 74, 13.8, color('card'), `stroke="${color('border')}" filter="url(#task-shadow)"`),
+    `<circle cx="${left + 28}" cy="${y + 37}" r="10" fill="${task.done ? color('green') : color('card')}" stroke="${task.done ? color('green') : color('border')}" stroke-width="2"/>`,
+    task.done ? `<path d="m${left + 24} ${y + 37} 3 3 5-6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>` : '',
+    text(left + 51, y + 29, task.text, 15, task.done ? muted : ink, task.done ? 'text-decoration="line-through"' : ''),
+    `<svg x="${left + 51}" y="${y + 42}" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="${deadlineColor}" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="13" r="7"/><path d="M12 9v4l3 2M5 3 2 6m17-3 3 3"/></svg>`,
+    text(left + 70, y + 54, deadlineLabel, 12, deadlineColor),
+    `<g fill="${muted}">${[0, 6, 12].map(dy => `<circle cx="${right - 74}" cy="${y + 31 + dy}" r="1.5"/><circle cx="${right - 68}" cy="${y + 31 + dy}" r="1.5"/>`).join('')}</g>`,
+    text(right - 32, y + 42, '×', 18, muted, centered)
   ].join('\n');
 }).join('\n');
-const app = svg(960, 640, 'TickList 清单页（产品界面）', [
-  rect(0, 0, 960, 640, 0, color('bg')), brand(24, 23, 122, 28),
-  icon(811, 27, iconBody('moon'), muted), icon(859, 27, globe, muted), icon(907, 27, gear, muted),
-  text(left, 108, '待办清单', 28, ink, 'font-weight="700" letter-spacing="0.5"'),
-  text(left, 137, '把今天，一件件做好。', 14, muted),
-  rect(left, 164, 472, 48, 12, color('card'), `stroke="${color('border')}" stroke-width="1.5"`),
-  text(left + 16, 194, '添加新的待办事项…', 15, muted),
-  rect(right - 78, 164, 78, 48, 12, accent), text(right - 39, 194, '添加', 15, '#fff', `${centered} font-weight="600"`),
-  ...[{x:left,w:61,label:'全部',active:true},{x:left+69,w:80,label:'未完成'},{x:left+157,w:80,label:'已完成'}].map(f => rect(f.x, 228, f.w, 34, 17, f.active ? accent : color('card'), `stroke="${f.active ? accent : color('border')}" stroke-width="1.5"`) + text(f.x+f.w/2,250,f.label,13,f.active?'#fff':muted,centered)),
+const app = svg(appViewport.width, appViewport.height, 'TickList 清单页（1440 × 900 实机比例）', [
+  rect(0, 0, appViewport.width, appViewport.height, 0, color('bg')), brand(24, 23, 122, 28),
+  icon(appViewport.width - 149.5, 26.5, iconBody('moon'), muted), icon(appViewport.width - 101.5, 26.5, globe, muted), icon(appViewport.width - 53.5, 26.5, gear, muted),
+  text(left, appTop + 29, '待办清单', 28, ink, 'font-weight="700" letter-spacing="0.5"'),
+  text(left, appTop + 57.5, '把今天，一件件做好。', 14, muted),
+  rect(left, appTop + 86, appWidth - 88, 48, 12, color('card'), `stroke="${color('border')}" stroke-width="1.5"`),
+  text(left + 16, appTop + 116, '添加新的待办事项…', 15, muted),
+  rect(right - 78, appTop + 86, 78, 48, 12, accent), text(right - 39, appTop + 116, '添加', 15, '#fff', `${centered} font-weight="600"`),
+  ...[{x:left,w:61,label:'全部',active:true},{x:left+69,w:74,label:'未完成'},{x:left+151,w:74,label:'已完成'}].map(f => rect(f.x, appTop + 150, f.w, 35.5, 17.75, f.active ? accent : color('card'), `stroke="${f.active ? accent : color('border')}" stroke-width="1.5"`) + text(f.x+f.w/2,appTop+173,f.label,13,f.active?'#fff':muted,centered)),
   rows,
-  text(646, 552, `共 ${tasks.length} 项，已完成 ${tasks.filter(t=>t.done).length} 项`, 13, muted, 'text-anchor="end"'),
-  text(right, 552, '清除已完成', 13, muted, 'text-anchor="end" text-decoration="underline"')
+  text(right - 79, appTop + 478, `共 ${tasks.length} 项，已完成 ${tasks.filter(t=>t.done).length} 项`, 13, muted, 'text-anchor="end"'),
+  text(right, appTop + 478, '清除已完成', 13, muted, 'text-anchor="end" text-decoration="underline"')
 ].join('\n'), '<filter id="task-shadow" x="-10%" y="-40%" width="120%" height="180%"><feDropShadow dx="0" dy="4" stdDeviation="9" flood-color="#1e222d" flood-opacity="0.06"/></filter>');
 fs.mkdirSync(out, { recursive: true });
 for (const [name, contents] of [['landing-zh.svg', landing], ['app-zh.svg', app]]) {

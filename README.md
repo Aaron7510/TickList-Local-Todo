@@ -18,6 +18,8 @@ TickList 是面向电脑端的轻量待办网页：无需注册，任务保存�
 
 一行记录任务，安排截止时间，查看未完成事项，逐项完成。
 
+按 1440 × 900 桌面实机比例展示：清单宽度 560 px，保留页面原有留白、字号与控件尺寸。
+
 [![TickList 清单页矢量展示](docs/visuals/app-zh.svg)](docs/visuals/app-zh.svg)
 
 [查看清单页 SVG 原图](docs/visuals/app-zh.svg) · [页面源码](index.html)

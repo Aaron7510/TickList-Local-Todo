@@ -1,45 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" lang="zh-CN" width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="visual-title visual-description">
-<title id="visual-title">TickList 清单页（产品界面）</title>
+<svg xmlns="http://www.w3.org/2000/svg" lang="zh-CN" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="visual-title visual-description">
+<title id="visual-title">TickList 清单页（1440 × 900 实机比例）</title>
 <desc id="visual-description">按现有页面样式绘制的静态矢量展示，非浏览器截图。仅使用公开示例任务。</desc>
 <defs><filter id="task-shadow" x="-10%" y="-40%" width="120%" height="180%"><feDropShadow dx="0" dy="4" stdDeviation="9" flood-color="#1e222d" flood-opacity="0.06"/></filter></defs>
-<g font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif"><rect x="0" y="0" width="960" height="640" rx="0" fill="#f5f6f8" />
+<g font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif"><rect x="0" y="0" width="1440" height="900" rx="0" fill="#f5f6f8" />
 <svg x="24" y="23" width="122" height="28" viewBox="0 0 278 64"><defs><linearGradient id="ticklist-gradient" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4f6ef7"/><stop offset="1" stop-color="#8473f5"/></linearGradient></defs><rect width="64" height="64" rx="18" fill="url(#ticklist-gradient)"/><path d="m18 33 10 10 19-21" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M117.591 20.955L106.975 20.955L106.975 51.351L98.565 51.351L98.565 20.955L88 20.955L88 14.128L117.591 14.128ZM125.949 20.566C124.565 20.566 123.432 20.155 122.549 19.333C121.666 18.511 121.225 17.503 121.225 16.309C121.225 15.08 121.666 14.077 122.549 13.298C123.432 12.519 124.565 12.13 125.949 12.13C127.351 12.13 128.489 12.519 129.363 13.298C130.237 14.077 130.674 15.08 130.674 16.309C130.674 17.555 130.237 18.576 129.363 19.372C128.489 20.168 127.351 20.566 125.949 20.566ZM129.999 51.351L121.796 51.351L121.796 24.771L129.999 24.771ZM157.046 50.391C155.194 51.464 152.521 52 149.025 52C144.941 52 141.636 50.763 139.11 48.288C136.583 45.814 135.32 42.621 135.32 38.71C135.32 34.193 136.674 30.633 139.382 28.029C142.09 25.424 145.711 24.122 150.245 24.122C153.377 24.122 155.644 24.537 157.046 25.368L157.046 32.324C155.333 31.044 153.421 30.404 151.31 30.404C148.956 30.404 147.091 31.091 145.716 32.467C144.34 33.843 143.652 35.742 143.652 38.165C143.652 40.518 144.31 42.366 145.625 43.707C146.94 45.048 148.748 45.718 151.05 45.718C153.092 45.718 155.091 45.078 157.046 43.798ZM189.051 51.351L179.213 51.351L170.726 38.165L170.622 38.165L170.622 51.351L162.419 51.351L162.419 12L170.622 12L170.622 37.049L170.726 37.049L178.642 24.771L188.376 24.771L178.85 37.256ZM215.112 51.351L192.945 51.351L192.945 14.128L201.329 14.128L201.329 44.55L215.112 44.55ZM223.47 20.566C222.086 20.566 220.953 20.155 220.07 19.333C219.188 18.511 218.746 17.503 218.746 16.309C218.746 15.08 219.188 14.077 220.07 13.298C220.953 12.519 222.086 12.13 223.47 12.13C224.872 12.13 226.01 12.519 226.884 13.298C227.758 14.077 228.195 15.08 228.195 16.309C228.195 17.555 227.758 18.576 226.884 19.372C226.01 20.168 224.872 20.566 223.47 20.566ZM227.52 51.351L219.317 51.351L219.317 24.771L227.52 24.771ZM232.685 50.65L232.685 44.005C234.035 44.819 235.38 45.424 236.722 45.822C238.063 46.22 239.33 46.419 240.524 46.419C241.978 46.419 243.124 46.22 243.964 45.822C244.803 45.424 245.223 44.819 245.223 44.005C245.223 43.486 245.032 43.053 244.652 42.707C244.271 42.361 243.782 42.058 243.185 41.799C242.588 41.539 241.935 41.306 241.225 41.098C240.516 40.89 239.832 40.657 239.175 40.397C238.119 39.999 237.189 39.571 236.384 39.112C235.579 38.654 234.905 38.122 234.36 37.516C233.814 36.91 233.399 36.209 233.114 35.413C232.828 34.617 232.685 33.674 232.685 32.584C232.685 31.096 233.01 29.815 233.659 28.742C234.308 27.669 235.173 26.791 236.254 26.108C237.336 25.424 238.573 24.922 239.966 24.602C241.359 24.282 242.809 24.122 244.314 24.122C245.491 24.122 246.685 24.213 247.896 24.395C249.108 24.576 250.302 24.84 251.478 25.186L251.478 31.52C250.44 30.914 249.328 30.46 248.143 30.157C246.957 29.854 245.794 29.703 244.652 29.703C244.115 29.703 243.609 29.75 243.133 29.846C242.657 29.941 242.237 30.079 241.874 30.261C241.511 30.443 241.225 30.676 241.018 30.962C240.81 31.247 240.706 31.572 240.706 31.935C240.706 32.42 240.862 32.835 241.173 33.181C241.485 33.527 241.891 33.826 242.393 34.077C242.895 34.327 243.453 34.552 244.067 34.751C244.682 34.95 245.292 35.154 245.897 35.361C246.988 35.742 247.974 36.157 248.857 36.607C249.739 37.057 250.496 37.585 251.128 38.191C251.759 38.796 252.244 39.506 252.581 40.319C252.919 41.133 253.088 42.102 253.088 43.226C253.088 44.801 252.746 46.147 252.062 47.263C251.379 48.379 250.47 49.287 249.337 49.988C248.203 50.689 246.897 51.2 245.417 51.52C243.938 51.84 242.402 52 240.81 52C237.885 52 235.177 51.55 232.685 50.65ZM273.879 51.04C272.668 51.68 270.842 52 268.402 52C262.623 52 259.733 48.998 259.733 42.993L259.733 30.819L255.424 30.819L255.424 24.771L259.733 24.771L259.733 19.034L267.909 16.698L267.909 24.771L273.879 24.771L273.879 30.819L267.909 30.819L267.909 41.565C267.909 44.334 269.008 45.718 271.206 45.718C272.071 45.718 272.962 45.467 273.879 44.966Z" fill="#1a1d26" fill-rule="nonzero"/></svg>
-<svg x="811" y="27" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#9aa1af" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
-<svg x="859" y="27" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#9aa1af" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a18 18 0 0 1 0 18 18 18 0 0 1 0-18"/></svg>
-<svg x="907" y="27" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#9aa1af" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9.5 3-.6 2.3-2 .9-2.1-.7-2.5 4.3L4 11.4v2.2l-1.7 1.6 2.5 4.3 2.1-.7 2 .9.6 2.3h5l.6-2.3 2-.9 2.1.7 2.5-4.3-1.7-1.6v-2.2l1.7-1.6-2.5-4.3-2.1.7-2-.9L14.5 3z"/><circle cx="12" cy="12" r="3"/></svg>
-<text x="200" y="108" font-size="28" fill="#1a1d26" font-weight="700" letter-spacing="0.5">待办清单</text>
-<text x="200" y="137" font-size="14" fill="#9aa1af" >把今天，一件件做好。</text>
-<rect x="200" y="164" width="472" height="48" rx="12" fill="#ffffff" stroke="#ebecef" stroke-width="1.5"/>
-<text x="216" y="194" font-size="15" fill="#9aa1af" >添加新的待办事项…</text>
-<rect x="682" y="164" width="78" height="48" rx="12" fill="#4f6ef7" />
-<text x="721" y="194" font-size="15" fill="#fff" text-anchor="middle" font-weight="600">添加</text>
-<rect x="200" y="228" width="61" height="34" rx="17" fill="#4f6ef7" stroke="#4f6ef7" stroke-width="1.5"/><text x="230.5" y="250" font-size="13" fill="#fff" text-anchor="middle">全部</text>
-<rect x="269" y="228" width="80" height="34" rx="17" fill="#ffffff" stroke="#ebecef" stroke-width="1.5"/><text x="309" y="250" font-size="13" fill="#9aa1af" text-anchor="middle">未完成</text>
-<rect x="357" y="228" width="80" height="34" rx="17" fill="#ffffff" stroke="#ebecef" stroke-width="1.5"/><text x="397" y="250" font-size="13" fill="#9aa1af" text-anchor="middle">已完成</text>
-<rect x="200" y="276" width="560" height="72" rx="14" fill="#ffffff" stroke="#ebecef" filter="url(#task-shadow)"/>
-<circle cx="228" cy="312" r="10" fill="#ffffff" stroke="#ebecef" stroke-width="2"/>
+<svg x="1290.5" y="26.5" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#9aa1af" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+<svg x="1338.5" y="26.5" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#9aa1af" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a18 18 0 0 1 0 18 18 18 0 0 1 0-18"/></svg>
+<svg x="1386.5" y="26.5" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#9aa1af" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9.5 3-.6 2.3-2 .9-2.1-.7-2.5 4.3L4 11.4v2.2l-1.7 1.6 2.5 4.3 2.1-.7 2 .9.6 2.3h5l.6-2.3 2-.9 2.1.7 2.5-4.3-1.7-1.6v-2.2l1.7-1.6-2.5-4.3-2.1.7-2-.9L14.5 3z"/><circle cx="12" cy="12" r="3"/></svg>
+<text x="440" y="202" font-size="28" fill="#1a1d26" font-weight="700" letter-spacing="0.5">待办清单</text>
+<text x="440" y="230.5" font-size="14" fill="#9aa1af" >把今天，一件件做好。</text>
+<rect x="440" y="259" width="472" height="48" rx="12" fill="#ffffff" stroke="#ebecef" stroke-width="1.5"/>
+<text x="456" y="289" font-size="15" fill="#9aa1af" >添加新的待办事项…</text>
+<rect x="922" y="259" width="78" height="48" rx="12" fill="#4f6ef7" />
+<text x="961" y="289" font-size="15" fill="#fff" text-anchor="middle" font-weight="600">添加</text>
+<rect x="440" y="323" width="61" height="35.5" rx="17.75" fill="#4f6ef7" stroke="#4f6ef7" stroke-width="1.5"/><text x="470.5" y="346" font-size="13" fill="#fff" text-anchor="middle">全部</text>
+<rect x="509" y="323" width="74" height="35.5" rx="17.75" fill="#ffffff" stroke="#ebecef" stroke-width="1.5"/><text x="546" y="346" font-size="13" fill="#9aa1af" text-anchor="middle">未完成</text>
+<rect x="591" y="323" width="74" height="35.5" rx="17.75" fill="#ffffff" stroke="#ebecef" stroke-width="1.5"/><text x="628" y="346" font-size="13" fill="#9aa1af" text-anchor="middle">已完成</text>
+<rect x="440" y="374.5" width="560" height="74" rx="13.8" fill="#ffffff" stroke="#ebecef" filter="url(#task-shadow)"/>
+<circle cx="468" cy="411.5" r="10" fill="#ffffff" stroke="#ebecef" stroke-width="2"/>
 
-<text x="250" y="305" font-size="15" fill="#1a1d26" >整理今天的学习笔记</text>
-<svg x="250" y="318" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e5484d" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="13" r="7"/><path d="M12 9v4l3 2M5 3 2 6m17-3 3 3"/></svg>
-<text x="271" y="329" font-size="12" fill="#e5484d" >10月5日 20:00</text>
-<g fill="#9aa1af"><circle cx="685" cy="306" r="1.3"/><circle cx="691" cy="306" r="1.3"/><circle cx="685" cy="312" r="1.3"/><circle cx="691" cy="312" r="1.3"/><circle cx="685" cy="318" r="1.3"/><circle cx="691" cy="318" r="1.3"/></g>
-<text x="729" y="317" font-size="18" fill="#9aa1af" text-anchor="middle">×</text>
-<rect x="200" y="360" width="560" height="72" rx="14" fill="#ffffff" stroke="#ebecef" filter="url(#task-shadow)"/>
-<circle cx="228" cy="396" r="10" fill="#ffffff" stroke="#ebecef" stroke-width="2"/>
+<text x="491" y="403.5" font-size="15" fill="#1a1d26" >整理今天的学习笔记</text>
+<svg x="491" y="416.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e5484d" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="13" r="7"/><path d="M12 9v4l3 2M5 3 2 6m17-3 3 3"/></svg>
+<text x="510" y="428.5" font-size="12" fill="#e5484d" >10月5日 20:00</text>
+<g fill="#9aa1af"><circle cx="926" cy="405.5" r="1.5"/><circle cx="932" cy="405.5" r="1.5"/><circle cx="926" cy="411.5" r="1.5"/><circle cx="932" cy="411.5" r="1.5"/><circle cx="926" cy="417.5" r="1.5"/><circle cx="932" cy="417.5" r="1.5"/></g>
+<text x="968" y="416.5" font-size="18" fill="#9aa1af" text-anchor="middle">×</text>
+<rect x="440" y="458.5" width="560" height="74" rx="13.8" fill="#ffffff" stroke="#ebecef" filter="url(#task-shadow)"/>
+<circle cx="468" cy="495.5" r="10" fill="#ffffff" stroke="#ebecef" stroke-width="2"/>
 
-<text x="250" y="389" font-size="15" fill="#1a1d26" >为重要的事留出时间</text>
-<svg x="250" y="402" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9aa1af" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="13" r="7"/><path d="M12 9v4l3 2M5 3 2 6m17-3 3 3"/></svg>
-<text x="271" y="413" font-size="12" fill="#9aa1af" >设置截止时间</text>
-<g fill="#9aa1af"><circle cx="685" cy="390" r="1.3"/><circle cx="691" cy="390" r="1.3"/><circle cx="685" cy="396" r="1.3"/><circle cx="691" cy="396" r="1.3"/><circle cx="685" cy="402" r="1.3"/><circle cx="691" cy="402" r="1.3"/></g>
-<text x="729" y="401" font-size="18" fill="#9aa1af" text-anchor="middle">×</text>
-<rect x="200" y="444" width="560" height="72" rx="14" fill="#ffffff" stroke="#ebecef" filter="url(#task-shadow)"/>
-<circle cx="228" cy="480" r="10" fill="#22a06b" stroke="#22a06b" stroke-width="2"/>
-<path d="m224 480 3 3 5-6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="250" y="473" font-size="15" fill="#9aa1af" text-decoration="line-through">完成一件小事</text>
-<svg x="250" y="486" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9aa1af" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="13" r="7"/><path d="M12 9v4l3 2M5 3 2 6m17-3 3 3"/></svg>
-<text x="271" y="497" font-size="12" fill="#9aa1af" >设置截止时间</text>
-<g fill="#9aa1af"><circle cx="685" cy="474" r="1.3"/><circle cx="691" cy="474" r="1.3"/><circle cx="685" cy="480" r="1.3"/><circle cx="691" cy="480" r="1.3"/><circle cx="685" cy="486" r="1.3"/><circle cx="691" cy="486" r="1.3"/></g>
-<text x="729" y="485" font-size="18" fill="#9aa1af" text-anchor="middle">×</text>
-<text x="646" y="552" font-size="13" fill="#9aa1af" text-anchor="end">共 3 项，已完成 1 项</text>
-<text x="760" y="552" font-size="13" fill="#9aa1af" text-anchor="end" text-decoration="underline">清除已完成</text></g>
+<text x="491" y="487.5" font-size="15" fill="#1a1d26" >为重要的事留出时间</text>
+<svg x="491" y="500.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9aa1af" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="13" r="7"/><path d="M12 9v4l3 2M5 3 2 6m17-3 3 3"/></svg>
+<text x="510" y="512.5" font-size="12" fill="#9aa1af" >设置截止时间</text>
+<g fill="#9aa1af"><circle cx="926" cy="489.5" r="1.5"/><circle cx="932" cy="489.5" r="1.5"/><circle cx="926" cy="495.5" r="1.5"/><circle cx="932" cy="495.5" r="1.5"/><circle cx="926" cy="501.5" r="1.5"/><circle cx="932" cy="501.5" r="1.5"/></g>
+<text x="968" y="500.5" font-size="18" fill="#9aa1af" text-anchor="middle">×</text>
+<rect x="440" y="542.5" width="560" height="74" rx="13.8" fill="#ffffff" stroke="#ebecef" filter="url(#task-shadow)"/>
+<circle cx="468" cy="579.5" r="10" fill="#22a06b" stroke="#22a06b" stroke-width="2"/>
+<path d="m464 579.5 3 3 5-6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="491" y="571.5" font-size="15" fill="#9aa1af" text-decoration="line-through">完成一件小事</text>
+<svg x="491" y="584.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9aa1af" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="13" r="7"/><path d="M12 9v4l3 2M5 3 2 6m17-3 3 3"/></svg>
+<text x="510" y="596.5" font-size="12" fill="#9aa1af" >设置截止时间</text>
+<g fill="#9aa1af"><circle cx="926" cy="573.5" r="1.5"/><circle cx="932" cy="573.5" r="1.5"/><circle cx="926" cy="579.5" r="1.5"/><circle cx="932" cy="579.5" r="1.5"/><circle cx="926" cy="585.5" r="1.5"/><circle cx="932" cy="585.5" r="1.5"/></g>
+<text x="968" y="584.5" font-size="18" fill="#9aa1af" text-anchor="middle">×</text>
+<text x="921" y="651" font-size="13" fill="#9aa1af" text-anchor="end">共 3 项，已完成 1 项</text>
+<text x="1000" y="651" font-size="13" fill="#9aa1af" text-anchor="end" text-decoration="underline">清除已完成</text></g>
 </svg>
