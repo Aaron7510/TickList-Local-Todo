@@ -47,6 +47,8 @@
 
 ## 数据兼容
 
+README 的两张页面展示图由 `build-readme-visuals.js` 生成。运行 `node brand/build-readme-visuals.js` 可重建 `docs/visuals/landing-zh.svg` 与 `docs/visuals/app-zh.svg`。脚本读取页面文案、应用色值、正式 Logo 与公开任务样例，生成原生 SVG，不包含位图、外部资源或脚本。它们用于静态展示，浏览器实际运行证据仍使用验收记录。
+
 应用更名不改本地任务键 `todo.list.v3` 或既有备份格式 `aaron-todo-backup`；该字符串为旧数据协议标识。页面与导出文件显示 TickList。
 
 历史截图与旧 ZIP 已迁入本地 `archive/2026-10-06/`，不作为当前发布包。字体候选仅用于品牌研究，不包含在网页发布目录 `dist/`。原 Windows 字体的授权仍以对应字体许可为准；发布前应核实字形轮廓分发权，项目代码许可不替代字体许可。

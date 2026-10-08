@@ -13,4 +13,5 @@ Thumbs.db
 *.backup.json
 TickList-备份-*.json
 TickList-backup-*.json
+TickList-????-??-??*.md
 /release-artifacts/

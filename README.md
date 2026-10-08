@@ -4,7 +4,25 @@
 
 TickList 是面向电脑端的轻量待办网页：无需注册，任务保存在当前浏览器。使用普通 HTML、CSS 和 JavaScript，没有框架、第三方运行依赖或构建前置步骤。
 
-![TickList 产品界面](docs/screenshots/app-zh.png)
+## 页面展示
+
+### 产品介绍页（Landing）
+
+介绍 TickList 的使用方式与价值，从“开始记录今天”进入清单。
+
+[![TickList 产品介绍页矢量展示](docs/visuals/landing-zh.svg)](docs/visuals/landing-zh.svg)
+
+[查看介绍页 SVG 原图](docs/visuals/landing-zh.svg) · [页面源码](landing.html)
+
+### 清单页（产品界面）
+
+一行记录任务，安排截止时间，查看未完成事项，逐项完成。
+
+[![TickList 清单页矢量展示](docs/visuals/app-zh.svg)](docs/visuals/app-zh.svg)
+
+[查看清单页 SVG 原图](docs/visuals/app-zh.svg) · [页面源码](index.html)
+
+展示图按现有页面样式绘制为原生 SVG，文字与图形均为矢量，放大不会产生截图像素模糊。图中只使用公开示例任务；这是静态界面展示，实际浏览器验收截图保留在 `docs/screenshots/`。
 
 ## 使用
 
@@ -68,7 +86,7 @@ npm run package
 
 脚本职责：`storage.js` 管数据校验与保存，`drag.js` 管拖动，`app.js` 协调任务交互，`theme.js` 管主题，`language.js/css` 管共用语言入口，`app-i18n.js` 和 `landing-i18n.js` 管翻译，`landing.js` 管滚动渐显。仍采用普通脚本顺序加载，支持本地文件打开。
 
-2026-10-07 自动检查及许可文件打包通过；内置浏览器实际 JSON 下载→修改→恢复→刷新往返，以及下载的 Markdown 内容均已核对。Chrome/Edge、本地 file 使用和指定桌面尺寸的最终复验仍待完成，当前作为私有发布候选。详细证据和边界见审查记录。
+2026-10-07 本地检查、干净检出检查和首次 GitHub Actions 均通过；内置浏览器实际 JSON 下载→修改→恢复→刷新往返，以及下载的 Markdown 内容均已核对。Chrome/Edge 的指定桌面尺寸复验通过；普通浏览器完整下载往返、本地 file 使用及实际减少动态效果仍待补齐，当前作为私有发布候选。详细证据和边界见审查记录。
 
 - [当前代码审查](docs/maintenance/代码审查.md)
 - [目录整理记录](docs/maintenance/目录归档检查.md)
