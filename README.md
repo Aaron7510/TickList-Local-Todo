@@ -88,7 +88,7 @@ npm run package
 
 脚本职责：`storage.js` 管数据校验与保存，`drag.js` 管拖动，`app.js` 协调任务交互，`theme.js` 管主题，`language.js/css` 管共用语言入口，`app-i18n.js` 和 `landing-i18n.js` 管翻译，`landing.js` 管滚动渐显。仍采用普通脚本顺序加载，支持本地文件打开。
 
-2026-10-07 本地检查、干净检出检查和首次 GitHub Actions 均通过；内置浏览器实际 JSON 下载→修改→恢复→刷新往返，以及下载的 Markdown 内容均已核对。Chrome/Edge 的指定桌面尺寸复验通过；普通浏览器完整下载往返、本地 file 使用及实际减少动态效果仍待补齐，当前作为私有发布候选。详细证据和边界见审查记录。
+截至 2026-10-08，本地检查、干净检出检查及已推送提交的 GitHub Actions 均通过。Chrome 的实际 JSON 下载→修改→恢复→刷新→重新下载逐字段比对通过；Chrome/Edge 的实际 Markdown 下载、HTTP 核心操作、鼠标排序、两页冲突保护及桌面布局复核通过。Chrome 和 Edge 本地 file 使用均已通过人工操作反馈与实际下载文件核验；两浏览器实际减少动态效果验收亦通过，最终下载包需从最终提交重建并核验；当前保持私有发布候选。详细证据和边界见审查记录。
 
 - [当前代码审查](docs/maintenance/代码审查.md)
 - [目录整理记录](docs/maintenance/目录归档检查.md)
