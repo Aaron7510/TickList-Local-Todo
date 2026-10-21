@@ -28,9 +28,11 @@ TickList 是面向电脑端的轻量待办网页：无需注册，任务保存�
 
 ## 下载与宣传视频
 
-应用离线 ZIP 和 SHA-256 校验文件已保存在现有私有草稿，正式 Release 尚未发布。[打开 GitHub 发布列表](https://github.com/Aaron7510/TickList-Local-Todo/releases)查看草稿时需要具有仓库访问权限。
+应用与宣传附件已上传至[现有私有草稿](https://github.com/Aaron7510/TickList-Local-Todo/releases/tag/untagged-120f1e02c48e498c9327)，2026-10-21 已核对五份附件的大小及 SHA-256，均与本地一致。仓库仍为私有，正式 Release 尚未发布；以下链接需要仓库访问权限。
 
-35 秒宣传片和横版封面已经最终确认，当前为本地待上传附件，暂无在线播放地址。文件名、规格和摘要见[视频定版登记](marketing/video/定版登记.md)。上传后在此补充实际观看链接及封面，现有 Landing 和产品页矢量展示继续保留。
+- [打开 35 秒宣传片 MP4](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-35s-1080p60.mp4) · [查看横版封面](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-Cover-1920x1080.jpg) · [媒体 SHA-256 校验文件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-SHA256SUMS.txt)。
+- [下载应用离线 ZIP](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-v0.1.0.zip) · [应用 ZIP 校验文件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-v0.1.0.zip.sha256)。
+- 文件规格、批准和来源见[视频定版登记](marketing/video/定版登记.md)。Landing 与清单页的原生 SVG 展示保持。
 
 ## 使用
 
@@ -94,7 +96,7 @@ npm run package
 
 脚本职责：`storage.js` 管数据校验与保存，`drag.js` 管拖动，`app.js` 协调任务交互，`theme.js` 管主题，`language.js/css` 管共用语言入口，`app-i18n.js` 和 `landing-i18n.js` 管翻译，`landing.js` 管滚动渐显。仍采用普通脚本顺序加载，支持本地文件打开。
 
-2026-10-19 发布资料复核：产品运行代码保持 v0.1.0 基准 `9896044`，该版本的应用 ZIP、SHA-256、标签和私有草稿已建立；本地检查与打包、视频素材摘要及分轨校验通过。Chrome/Edge HTTP、本地 file 下载恢复及减少动态效果的浏览器证据来自 2026-10-08，本轮没有重做人工浏览器验收。整理后的文档和视频工程待提交私有 main 并运行该提交的 CI；仓库仍保持私有，正式 Release 尚未发布。详细证据见审查记录。
+2026-10-21 发布资料复核：产品运行代码及应用 ZIP 仍对应 v0.1.0 基准 `9896044`。文档和视频工程整理已通过提交 `9d6cef1` 同步私有仓库，[该提交 CI](https://github.com/Aaron7510/TickList-Local-Todo/actions/runs/39557948638)和干净检出检查、打包均通过；五份草稿附件的服务器摘要核对通过。Chrome/Edge 的浏览器证据来自 2026-10-08，本轮未重做人工浏览器验收或正式附件下载播放复验。仓库仍为私有，正式 Release 尚未发布；详细证据见审查记录。
 
 - [当前代码审查](docs/maintenance/代码审查.md)
 - [目录整理记录](docs/maintenance/目录归档检查.md)

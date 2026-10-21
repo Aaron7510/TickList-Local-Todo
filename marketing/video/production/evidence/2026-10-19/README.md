@@ -10,4 +10,4 @@
 
 历史原始 Markdown 的链接在上传报告中单独登记文件摘要与引用数量，不计入当前文档“零断链”的结论。此索引仍按当前文档逐项检查。
 
-路径迁移映射仅在本地 `marketing/video/cleanup/2026-10-19/path-mapping.json` 保存；必要工程恢复包在本地 `archive/video-cleanup-2026-10-19/`。公开的媒体附件地址将在实际上传后补充。original-scripts 只供追溯，不作为当前命令执行。
+路径迁移映射仅在本地 `marketing/video/cleanup/2026-10-19/path-mapping.json` 保存；必要工程恢复包在本地 `archive/video-cleanup-2026-10-19/`。2026-10-21 已上传的私有草稿附件地址见上方定版登记；访问需要仓库权限，正式 Release 未发布。original-scripts 只供追溯，不作为当前命令执行。
