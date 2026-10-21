@@ -1,0 +1,62 @@
+[
+  {
+    "name": "ace-lm.exe",
+    "bytes": 422912,
+    "sha256": "3b13b2d8df2ca204bfc16e729d4b9ab2770ee42782048f6060e97410f909f86e",
+    "url": "https://www.serveurperso.com/temp/acestep.cpp-win64/build/Release/ace-lm.exe"
+  },
+  {
+    "name": "ace-synth.exe",
+    "bytes": 645632,
+    "sha256": "ea994e803e5dded6c4f966b6ae4f131996b277f5414fc80d80c6ddf57ef75a3d",
+    "url": "https://www.serveurperso.com/temp/acestep.cpp-win64/build/Release/ace-synth.exe"
+  },
+  {
+    "name": "ace-server.exe",
+    "bytes": 1431552,
+    "sha256": "720249c2f0717e210eab8c74bd2cb0425a232ef0527006ef31bf578e4dd4e132",
+    "url": "https://www.serveurperso.com/temp/acestep.cpp-win64/build/Release/ace-server.exe"
+  },
+  {
+    "name": "ggml-base.dll",
+    "bytes": 692224,
+    "sha256": "01a9cb3e723e56bd6783b47caac44f6eba65dac46c4392e8c957a9012aab4942",
+    "url": "https://www.serveurperso.com/temp/acestep.cpp-win64/build/Release/ggml-base.dll"
+  },
+  {
+    "name": "ggml.dll",
+    "bytes": 61440,
+    "sha256": "cbcf531ac0a2a8d523c0bd2df84f1f4f1d193d18be2f7c583de8fb9778a53f10",
+    "url": "https://www.serveurperso.com/temp/acestep.cpp-win64/build/Release/ggml.dll"
+  },
+  {
+    "name": "ggml-vulkan.dll",
+    "bytes": 39982080,
+    "sha256": "32146948d603c745e009c551e16373aa3333f1c60207dd5051770c2c119c6e8d",
+    "url": "https://www.serveurperso.com/temp/acestep.cpp-win64/build/Release/ggml-vulkan.dll"
+  },
+  {
+    "name": "ggml-cpu-haswell.dll",
+    "bytes": 982528,
+    "sha256": "a5815192bd089742472726e8118170bad968b877b68e09285cbe2627f04d8abc",
+    "url": "https://www.serveurperso.com/temp/acestep.cpp-win64/build/Release/ggml-cpu-haswell.dll"
+  },
+  {
+    "name": "ggml-cpu-alderlake.dll",
+    "bytes": 981504,
+    "sha256": "b259487c7946166420e34e4c4f6ff518efb94b282479bb46673f7ee3e9c2389c",
+    "url": "https://www.serveurperso.com/temp/acestep.cpp-win64/build/Release/ggml-cpu-alderlake.dll"
+  },
+  {
+    "name": "ggml-cpu-skylakex.dll",
+    "bytes": 1022976,
+    "sha256": "17b9ec4ebb16f26a5f860533caee2e8193f546aa78384dfcaef63b83ee948f73",
+    "url": "https://www.serveurperso.com/temp/acestep.cpp-win64/build/Release/ggml-cpu-skylakex.dll"
+  },
+  {
+    "name": "ggml-cpu-x64.dll",
+    "bytes": 869888,
+    "sha256": "1de6c30416003ddab8bad20d463accc7f12f690a0f0a55d37e2aa394d36aa0bc",
+    "url": "https://www.serveurperso.com/temp/acestep.cpp-win64/build/Release/ggml-cpu-x64.dll"
+  }
+]

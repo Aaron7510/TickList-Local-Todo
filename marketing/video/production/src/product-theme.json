@@ -1,0 +1,18 @@
+{
+  "--bg": "#f5f6f8",
+  "--card": "#ffffff",
+  "--border": "#ebecef",
+  "--text": "#1a1d26",
+  "--text-muted": "#9aa1af",
+  "--accent": "#4f6ef7",
+  "--accent-light": "#eef1ff",
+  "--green": "#22a06b",
+  "--green-light": "#e6f7f0",
+  "--orange": "#e8930c",
+  "--orange-light": "#fdf3e2",
+  "--red": "#e5484d",
+  "--red-light": "#fdecec",
+  "--radius": "12px",
+  "--shadow": "0 4px 20px rgba(30, 34, 45, 0.06)",
+  "--track": "#eff0f3"
+}

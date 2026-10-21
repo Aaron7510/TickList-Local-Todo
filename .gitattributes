@@ -8,3 +8,15 @@
 *.svg text eol=lf
 *.png binary
 *.ico binary
+
+# Preserve bytes recorded by video source and historical evidence manifests.
+/marketing/video/production/src/** -text whitespace=cr-at-eol
+/marketing/video/production/evidence/** -text whitespace=cr-at-eol
+/marketing/video/production/media/** -text whitespace=cr-at-eol
+/marketing/video/production/package-lock.json -text whitespace=cr-at-eol
+/marketing/video/production/public/brand/** -text whitespace=cr-at-eol
+/marketing/video/release/2026-10-19/*.json -text whitespace=cr-at-eol
+/marketing/video/release/2026-10-19/SHA256SUMS.txt -text whitespace=cr-at-eol
+
+# Downloaded source pages are archived verbatim, including original spacing.
+/marketing/video/production/media/recordings/*.html -text -whitespace

@@ -1,0 +1,27 @@
+[
+  {
+    "path": "D:\\AI\\AI_outputs\\Codex\\待办清单\\marketing\\video\\production\\out\\final-2026-10-14\\TickList-35s-silent-1080p60.mp4",
+    "bytes": 4825737,
+    "sha256": "692e78614b3dafd21daeda7e46ab3ac83a5f8741d1de805fa5299591da6339b7"
+  },
+  {
+    "path": "D:\\AI\\AI_outputs\\Codex\\待办清单\\marketing\\video\\production\\out\\final-2026-10-14\\TickList-35s-sound-1080p60.mp4",
+    "bytes": 5720213,
+    "sha256": "7119b66e9cc5b55346aa46f1a224f4c7e5e0008fad157e61b3944d68fb489a03"
+  },
+  {
+    "path": "D:\\AI\\AI_outputs\\Codex\\待办清单\\marketing\\video\\production\\src\\BrandOpeningV2.tsx",
+    "bytes": 13648,
+    "sha256": "eea5142e54fa9694bdddc154c4bd9cf69c4f8ca5b70e36aaf03fed910fd50254"
+  },
+  {
+    "path": "D:\\AI\\AI_outputs\\Codex\\待办清单\\marketing\\video\\production\\src\\EndCardScene.tsx",
+    "bytes": 5036,
+    "sha256": "1e6da14e1413b59e923cc49e2b0ff1d6d3a11d269254d4c65999524ef680d129"
+  },
+  {
+    "path": "D:\\AI\\AI_outputs\\Codex\\待办清单\\marketing\\video\\production\\src\\BackupScene.tsx",
+    "bytes": 9989,
+    "sha256": "56ef204af2045f5342826b52e63955b630825706dda139537ae60975b4aac795"
+  }
+]

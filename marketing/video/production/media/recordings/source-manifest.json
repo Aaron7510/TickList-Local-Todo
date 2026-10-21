@@ -1,0 +1,110 @@
+[
+  {
+    "name": "keyboard-supersnd",
+    "page": "https://freesound.org/people/supersnd/sounds/215744/",
+    "cc0_link_present": true,
+    "observed_audio_urls": [
+      "https://cdn.freesound.org/previews/215/215744_3877322-hq.mp3",
+      "https://cdn.freesound.org/previews/215/215744_3877322-lq.mp3",
+      "https://cdn.freesound.org/previews/215/215744_3877322-lq.ogg",
+      "https://freesound.orghttps://cdn.freesound.org/previews/215/215744_3877322-lq.mp3"
+    ],
+    "html_sha256": "f6368616d76532448ebd9f049c05bf4da531561f717bc65a69223b5a1bc98def",
+    "download_url": "https://cdn.freesound.org/previews/215/215744_3877322-hq.mp3",
+    "downloaded_file": "keyboard-supersnd.mp3",
+    "sha256": "082a2887f285d87e9079bf8b6b4b0c7e4eb2de937fb86141298d123e5cafcb1b",
+    "bytes": 319492,
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_quality": "Public high-quality MP3 preview, not original WAV",
+    "downloaded_audio_metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "bit_rate": "187083",
+          "side_data_list": [
+            {}
+          ]
+        }
+      ],
+      "format": {
+        "duration": "13.662041"
+      }
+    }
+  },
+  {
+    "name": "finger-pikachu09",
+    "page": "https://freesound.org/people/pikachu09/sounds/204605/",
+    "cc0_link_present": true,
+    "observed_audio_urls": [
+      "https://cdn.freesound.org/previews/204/204605_3439254-hq.mp3",
+      "https://cdn.freesound.org/previews/204/204605_3439254-lq.mp3",
+      "https://cdn.freesound.org/previews/204/204605_3439254-lq.ogg",
+      "https://freesound.orghttps://cdn.freesound.org/previews/204/204605_3439254-lq.mp3"
+    ],
+    "html_sha256": "be80f56a32f4f3ec2d1d239000e11b0d96a378390ef4c35d42eb766b99c53795",
+    "download_url": "https://cdn.freesound.org/previews/204/204605_3439254-hq.mp3",
+    "downloaded_file": "finger-pikachu09.mp3",
+    "sha256": "7bafb0c887dc9b0917b6d083cd8c6fa1c01a46e0c24861e1c5231a9f67744dea",
+    "bytes": 134998,
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_quality": "Public high-quality MP3 preview, not original WAV",
+    "downloaded_audio_metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "bit_rate": "180538",
+          "side_data_list": [
+            {}
+          ]
+        }
+      ],
+      "format": {
+        "duration": "5.982041"
+      }
+    }
+  },
+  {
+    "name": "taps-kyles",
+    "page": "https://freesound.org/people/kyles/sounds/452621/",
+    "cc0_link_present": true,
+    "observed_audio_urls": [
+      "https://cdn.freesound.org/previews/452/452621_612689-hq.mp3",
+      "https://cdn.freesound.org/previews/452/452621_612689-lq.mp3",
+      "https://cdn.freesound.org/previews/452/452621_612689-lq.ogg",
+      "https://freesound.orghttps://cdn.freesound.org/previews/452/452621_612689-lq.mp3"
+    ],
+    "html_sha256": "14ae8a695af6e580eeb9ca61592a9c558026a738f33f59ea6391ef33d01bcabc",
+    "download_url": "https://cdn.freesound.org/previews/452/452621_612689-hq.mp3",
+    "downloaded_file": "taps-kyles.mp3",
+    "sha256": "aec644babc14af0278410cc6197e09cea1a3758363b9deffb52f6371f1a31fbb",
+    "bytes": 401184,
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_quality": "Public high-quality MP3 preview, not original WAV",
+    "downloaded_audio_metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "48000",
+          "channels": 1,
+          "bit_rate": "131622",
+          "side_data_list": [
+            {}
+          ]
+        }
+      ],
+      "format": {
+        "duration": "24.384000"
+      }
+    }
+  }
+]

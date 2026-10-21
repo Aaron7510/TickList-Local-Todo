@@ -26,6 +26,12 @@ TickList 是面向电脑端的轻量待办网页：无需注册，任务保存�
 
 展示图按现有页面样式绘制为原生 SVG，文字与图形均为矢量，放大不会产生截图像素模糊。图中只使用公开示例任务；这是静态界面展示，实际浏览器验收截图保留在 `docs/screenshots/`。
 
+## 下载与宣传视频
+
+应用离线 ZIP 和 SHA-256 校验文件已保存在现有私有草稿，正式 Release 尚未发布。[打开 GitHub 发布列表](https://github.com/Aaron7510/TickList-Local-Todo/releases)查看草稿时需要具有仓库访问权限。
+
+35 秒宣传片和横版封面已经最终确认，当前为本地待上传附件，暂无在线播放地址。文件名、规格和摘要见[视频定版登记](marketing/video/定版登记.md)。上传后在此补充实际观看链接及封面，现有 Landing 和产品页矢量展示继续保留。
+
 ## 使用
 
 打开 `landing.html` 查看产品介绍，点击“开始记录今天”进入清单；也可以直接打开 `index.html`。移动或分发时，请一起保留两个 HTML 和 `assets/`。
@@ -83,19 +89,22 @@ npm run package
 | `tools/` | 无第三方依赖的检查、预览和发布脚本 |
 | `brand/` | 品牌规范、矢量生成源与字体比较 |
 | `docs/` | 审查、优化日志、计划及公开示例截图 |
-| `marketing/video/` | 宣传视频策划 |
+| `marketing/video/` | 宣传视频策划与定版登记 |
 | `archive/` | 本地历史归档，默认忽略上传 |
 
 脚本职责：`storage.js` 管数据校验与保存，`drag.js` 管拖动，`app.js` 协调任务交互，`theme.js` 管主题，`language.js/css` 管共用语言入口，`app-i18n.js` 和 `landing-i18n.js` 管翻译，`landing.js` 管滚动渐显。仍采用普通脚本顺序加载，支持本地文件打开。
 
-截至 2026-10-08，本地检查、干净检出检查及已推送提交的 GitHub Actions 均通过。Chrome 的实际 JSON 下载→修改→恢复→刷新→重新下载逐字段比对通过；Chrome/Edge 的实际 Markdown 下载、HTTP 核心操作、鼠标排序、两页冲突保护及桌面布局复核通过。Chrome 和 Edge 本地 file 使用均已通过人工操作反馈与实际下载文件核验；两浏览器实际减少动态效果验收亦通过，最终下载包需从最终提交重建并核验；当前保持私有发布候选。详细证据和边界见审查记录。
+2026-10-19 发布资料复核：产品运行代码保持 v0.1.0 基准 `9896044`，该版本的应用 ZIP、SHA-256、标签和私有草稿已建立；本地检查与打包、视频素材摘要及分轨校验通过。Chrome/Edge HTTP、本地 file 下载恢复及减少动态效果的浏览器证据来自 2026-10-08，本轮没有重做人工浏览器验收。整理后的文档和视频工程待提交私有 main 并运行该提交的 CI；仓库仍保持私有，正式 Release 尚未发布。详细证据见审查记录。
 
 - [当前代码审查](docs/maintenance/代码审查.md)
 - [目录整理记录](docs/maintenance/目录归档检查.md)
 - [每日优化日志](docs/maintenance/优化日志.md)
 - [GitHub 上传计划](docs/release/GitHub上传计划.md)
+- [本次上传范围与白名单生成](docs/release/上传范围说明.md)
 - [2026-10-06 今日计划](docs/plan/2026-10-06.md)
 - [品牌规范](brand/README.md) · [品牌预览](brand/preview.html)
+- [宣传视频定版登记与公开文件](marketing/video/定版登记.md)
+- [最小视频工程](marketing/video/production/README.md) · [废案清理报告](docs/maintenance/视频废案清理报告.md)
 - [宣传视频策划](marketing/video/品牌IP与宣传视频策划.md)
 
 正式字标为 Segoe UI Bold，勾号作为品牌核心，开发者为 Soren。代码和品牌许可范围见上方许可说明。

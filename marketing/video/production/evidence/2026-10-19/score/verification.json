@@ -1,0 +1,87 @@
+{
+  "pass": true,
+  "picture": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "frames": 2100,
+    "duration": 35,
+    "codec": "h264",
+    "color_space": "bt709",
+    "copied_current_picture_stream": true,
+    "restore_icon_fixed_source_used": true
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration": "35.000000",
+    "decoded_samples": 1680384,
+    "loudness": {
+      "input_i": "-19.51",
+      "input_tp": "-2.82",
+      "input_lra": "6.20",
+      "input_thresh": "-30.10",
+      "output_i": "-19.06",
+      "output_tp": "-1.60",
+      "output_lra": "3.00",
+      "output_thresh": "-29.50",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.44"
+    },
+    "aac_to_wav_correlation": 0.9999202568442563,
+    "aac_alignment_offset_samples": 0,
+    "stem_sum_max_error": 1.1920928955078125e-07,
+    "all_19_ui_cues_present": true,
+    "ui_cue_count": 19,
+    "clipped_samples": 0
+  },
+  "protected_originals": [
+    {
+      "path": "D:\\AI\\AI_outputs\\Codex\\待办清单\\marketing\\video\\production\\out\\final-2026-10-14\\TickList-35s-silent-1080p60.mp4",
+      "bytes": 4825737,
+      "sha256": "692e78614b3dafd21daeda7e46ab3ac83a5f8741d1de805fa5299591da6339b7",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\AI\\AI_outputs\\Codex\\待办清单\\marketing\\video\\production\\out\\final-2026-10-14\\TickList-35s-sound-1080p60.mp4",
+      "bytes": 5720213,
+      "sha256": "7119b66e9cc5b55346aa46f1a224f4c7e5e0008fad157e61b3944d68fb489a03",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\AI\\AI_outputs\\Codex\\待办清单\\marketing\\video\\production\\src\\BrandOpeningV2.tsx",
+      "bytes": 13648,
+      "sha256": "eea5142e54fa9694bdddc154c4bd9cf69c4f8ca5b70e36aaf03fed910fd50254",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\AI\\AI_outputs\\Codex\\待办清单\\marketing\\video\\production\\src\\EndCardScene.tsx",
+      "bytes": 5036,
+      "sha256": "1e6da14e1413b59e923cc49e2b0ff1d6d3a11d269254d4c65999524ef680d129",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\AI\\AI_outputs\\Codex\\待办清单\\marketing\\video\\production\\src\\BackupScene.tsx",
+      "bytes": 9989,
+      "sha256": "56ef204af2045f5342826b52e63955b630825706dda139537ae60975b4aac795",
+      "unchanged": true
+    }
+  ],
+  "full_decode_passed": true,
+  "subjective_headphone_review": "not performed",
+  "browser_playback": {
+    "url": "http://localhost:3011/",
+    "loaded": true,
+    "duration": 35,
+    "started": true,
+    "muted": false,
+    "rate": 1,
+    "observed_time": 17.746196,
+    "paused_at_last_observation": true,
+    "ended": false,
+    "media_error": null,
+    "continuous_35_second_playback_verified": false,
+    "human_listening_verified": false
+  }
+}

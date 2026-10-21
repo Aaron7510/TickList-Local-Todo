@@ -1,0 +1,29 @@
+{
+  "pass": true,
+  "date": "2026-10-19",
+  "updated_existing_documents": [
+    "README.md",
+    "marketing/video/品牌IP与宣传视频策划.md",
+    "marketing/video/production/README.md",
+    "marketing/video/原创配乐制作记录-2026-10-18.md",
+    "marketing/video/交互音效优化记录-2026-10-18.md",
+    "marketing/video/production/out/sfx-natural-2026-10-18/README.md",
+    "marketing/video/production/out/score-2026-10-18/README.md",
+    "docs/plan/2026-10-06.md",
+    "docs/release/GitHub上传计划.md",
+    "docs/maintenance/优化日志.md"
+  ],
+  "new_documents": [
+    "marketing/video/定版登记.md",
+    "marketing/video/release/2026-10-19/README.md",
+    "marketing/video/history/2026-10-19-final-lock-before/README.md"
+  ],
+  "new_local_links_checked": 51,
+  "new_local_links_all_exist": true,
+  "public_directory_contains_exactly_designated_two_files": true,
+  "public_hashes_match_approved_sources": true,
+  "protected_source_files_unchanged": 31,
+  "prior_media_backup_hash_matches_acceptance": true,
+  "active_approved_music_pending_statements_remaining": false,
+  "historical_rejected_versions_not_marked_approved": true
+}

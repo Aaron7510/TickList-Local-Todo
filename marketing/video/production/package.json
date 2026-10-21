@@ -1,0 +1,38 @@
+{
+  "name": "ticklist-video",
+  "version": "1.0.0",
+  "description": "TickList approved 35-second film and minimal editable scenes",
+  "repository": {},
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@remotion/cli": "4.0.534",
+    "@remotion/media": "^4.0.534",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.534"
+  },
+  "devDependencies": {
+    "@ffmpeg-installer/win32-x64": "4.1.0",
+    "@remotion/eslint-config-flat": "4.0.534",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.39.5",
+    "prettier": "3.8.1",
+    "sharp": "0.35.5",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio --no-open",
+    "lint": "eslint src && tsc",
+    "check": "node scripts/check-project.mjs && npm run lint",
+    "verify:final": "python scripts/verify-final.py",
+    "verify:media": "python scripts/verify-final.py --decode",
+    "render:silent": "remotion render TickListStageFour out/edit/silent.mp4 --codec=h264 --pixel-format=yuv420p --crf=16 --concurrency=2",
+    "render:edit": "remotion render TickListFinalFilm out/edit/with-approved-audio.mp4 --codec=h264 --pixel-format=yuv420p --crf=16 --concurrency=2",
+    "mix:sfx": "python scripts/generate-natural-sfx.py",
+    "mix:score": "python scripts/finish-score.py",
+    "finish:edit": "python scripts/finish-media.py",
+    "sync:logo": "node scripts/sync-logo.mjs"
+  }
+}

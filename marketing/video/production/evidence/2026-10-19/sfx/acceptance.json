@@ -1,0 +1,23 @@
+{
+  "status": "approved",
+  "date": "2026-10-18",
+  "timezone": "Asia/Shanghai",
+  "source": "direct user message in this chat",
+  "evidence": "视频已通过",
+  "review_url": "http://localhost:3012/",
+  "approved_file": "TickList-natural-ui-1080p60.mp4",
+  "sha256": "207755f45c56c661b968fcb6537f8963e580750b1824303c01f0a4d0f890d8c4",
+  "bytes": 5952035,
+  "duration_seconds": 35,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 60,
+  "version": "自然交互音效版，保留已满意的背景音乐与视觉",
+  "original_versions_preserved": true,
+  "media_regenerated_at_acceptance": false,
+  "technical_verification": "verification.json",
+  "media_backup": "TickList-natural-sfx-backup-2026-10-18.zip",
+  "media_backup_sha256": "5ea5c233e021dcff0640aad2fb4c0b556fc5025536da6cc463e9da8f633eac37"
+}

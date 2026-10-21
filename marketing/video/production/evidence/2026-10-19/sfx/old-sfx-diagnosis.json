@@ -1,0 +1,87 @@
+{
+  "old_click_waveform_pairs": [
+    {
+      "t1": 12.65,
+      "t2": 6.1,
+      "correlation": 0.8459086240723115
+    },
+    {
+      "t1": 18.75,
+      "t2": 6.1,
+      "correlation": 0.9999998734947398
+    },
+    {
+      "t1": 18.75,
+      "t2": 12.65,
+      "correlation": 0.8459074700104002
+    },
+    {
+      "t1": 20.35,
+      "t2": 6.1,
+      "correlation": 0.9999999011122386
+    },
+    {
+      "t1": 20.35,
+      "t2": 12.65,
+      "correlation": 0.8459136634186792
+    },
+    {
+      "t1": 20.35,
+      "t2": 18.75,
+      "correlation": 0.9999998680854836
+    },
+    {
+      "t1": 26.75,
+      "t2": 6.1,
+      "correlation": 0.9999998734947398
+    },
+    {
+      "t1": 26.75,
+      "t2": 12.65,
+      "correlation": 0.8459074700104002
+    },
+    {
+      "t1": 26.75,
+      "t2": 18.75,
+      "correlation": 1.0
+    },
+    {
+      "t1": 26.75,
+      "t2": 20.35,
+      "correlation": 0.9999998680854836
+    },
+    {
+      "t1": 27.7,
+      "t2": 6.1,
+      "correlation": 1.0
+    },
+    {
+      "t1": 27.7,
+      "t2": 12.65,
+      "correlation": 0.8459086240723116
+    },
+    {
+      "t1": 27.7,
+      "t2": 18.75,
+      "correlation": 0.99999987349474
+    },
+    {
+      "t1": 27.7,
+      "t2": 20.35,
+      "correlation": 0.9999999011122386
+    },
+    {
+      "t1": 27.7,
+      "t2": 26.75,
+      "correlation": 0.99999987349474
+    }
+  ],
+  "source_findings": [
+    "Fixed sinusoidal body plus filtered seeded noise",
+    "55ms typing duration for every displayed character",
+    "Same envelope for all typing gestures, four pitch variants and three cycling gains",
+    "Five later interactions reuse the same tap/confirm clips with gain changes",
+    "No genuine key down/up performance or contact texture"
+  ],
+  "accepted_bgm_sha256": "80066e4afc73a7796829cab49571eaa738f7d505e58079bf663b1082c7b7ddf8"
+}

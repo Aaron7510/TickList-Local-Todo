@@ -1,0 +1,10 @@
+import fs from "node:fs";
+import path from "node:path";
+import crypto from "node:crypto";
+import {fileURLToPath} from "node:url";
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
+const source=path.resolve(root,"../../../assets/brand/logo-light.svg");
+const data=fs.readFileSync(source),sha256=crypto.createHash("sha256").update(data).digest("hex");
+const output="// Generated from the formal assets/brand/logo-light.svg; run npm run sync:logo after an intentional asset update.\nexport const brandLogoSourceSha256="+JSON.stringify(sha256)+";\nexport const brandLogoDataUri="+JSON.stringify("data:image/svg+xml;base64,"+data.toString("base64"))+";\n";
+fs.writeFileSync(path.join(root,"src/brand-logo-data.ts"),output);
+console.log("Embedded formal vector logo. Source SHA256: "+sha256);

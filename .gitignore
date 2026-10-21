@@ -1,4 +1,4 @@
-# Local history and generated QA artifacts
+# Local history, generated product artifacts and user data
 /archive/
 /docs/maintenance/screenshots/
 /dist/
@@ -15,3 +15,15 @@ TickList-备份-*.json
 TickList-backup-*.json
 TickList-????-??-??*.md
 /release-artifacts/
+
+# Video artifacts and generated cleanup records
+/marketing/video/history/
+/marketing/video/layout/
+/marketing/video/references/
+/marketing/video/cleanup/
+/marketing/video/release/*/public/
+/marketing/video/production/media/**/*.wav
+/marketing/video/production/media/**/*.mp3
+/marketing/video/production/public/audio/*.wav
+/docs/release/upload-allowlist.txt
+/docs/release/upload-scope-audit.json

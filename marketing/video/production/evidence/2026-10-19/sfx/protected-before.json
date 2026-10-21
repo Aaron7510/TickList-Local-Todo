@@ -1,0 +1,127 @@
+[
+  {
+    "file": "marketing/video/production/out/score-2026-10-18/TickList-original-score-1080p60.mp4",
+    "bytes": 5946635,
+    "sha256": "efbd2c32adfd5e10008ff345e11e8cf9d7ebac507edfdb1279b9d1e910decdfa"
+  },
+  {
+    "file": "marketing/video/production/out/score-2026-10-18/TickList-original-bgm-35s.wav",
+    "bytes": 10080102,
+    "sha256": "80066e4afc73a7796829cab49571eaa738f7d505e58079bf663b1082c7b7ddf8"
+  },
+  {
+    "file": "marketing/video/production/out/score-2026-10-18/TickList-original-bgm-35s.mp3",
+    "bytes": 1122093,
+    "sha256": "9ebfd11dfca6a4d39f87bccfb3d1702a6f35c5b29f4b4396d6ce9e1fe0d5165a"
+  },
+  {
+    "file": "marketing/video/production/out/score-2026-10-18/TickList-soundtrack-35s.wav",
+    "bytes": 10080102,
+    "sha256": "afc69227bd5da50f2f0f237ea425164b80d656b6fba56525327ea56e2f778047"
+  },
+  {
+    "file": "marketing/video/production/out/score-2026-10-18/TickList-ui-35s.wav",
+    "bytes": 10080102,
+    "sha256": "23b0ddef9e4f5f09fe194e34f85986636bb43e137871f05df15181189d9cef49"
+  },
+  {
+    "file": "marketing/video/production/out/score-2026-10-18/TickList-picture-current-1080p60.mp4",
+    "bytes": 4819522,
+    "sha256": "f2229e59df29eaac451d76e3611fd6c65e23c22559c6f002dfdc437331853280"
+  },
+  {
+    "file": "marketing/video/production/src/AudioReviewV2.tsx",
+    "bytes": 1184,
+    "sha256": "50db44b9d28a1b482cba40520751b4754867f9d1375a1075606a83ab2ea46dcf"
+  },
+  {
+    "file": "marketing/video/production/src/BackupScene.tsx",
+    "bytes": 9989,
+    "sha256": "56ef204af2045f5342826b52e63955b630825706dda139537ae60975b4aac795"
+  },
+  {
+    "file": "marketing/video/production/src/brand-logo-data.ts",
+    "bytes": 6130,
+    "sha256": "85ea089f7a6c0945bfeaeee0aac4dc7f29cb6399f3a621e3d1d80d66756c2b1d"
+  },
+  {
+    "file": "marketing/video/production/src/BrandOpening.tsx",
+    "bytes": 15274,
+    "sha256": "56537437123811691c4cb210ee1de48f19d7201fd47cb688fc7d71891516f8b1"
+  },
+  {
+    "file": "marketing/video/production/src/BrandOpeningV2.tsx",
+    "bytes": 13648,
+    "sha256": "eea5142e54fa9694bdddc154c4bd9cf69c4f8ca5b70e36aaf03fed910fd50254"
+  },
+  {
+    "file": "marketing/video/production/src/CompletionScene.tsx",
+    "bytes": 9419,
+    "sha256": "0d2fdeba612394d906af87426d23363c561d087b1ba8181d029ebd567854fe63"
+  },
+  {
+    "file": "marketing/video/production/src/Composition.tsx",
+    "bytes": 6460,
+    "sha256": "b5078877a75f61fcee37dd534516e9878fbd45ea6a6d9895ea5a5c5a4611e653"
+  },
+  {
+    "file": "marketing/video/production/src/DeadlineScene.tsx",
+    "bytes": 9889,
+    "sha256": "731bb8797c7434b22c999cb3ff42b3baa6459ed9ec9b2f320a1bd6f0fd1ba2e2"
+  },
+  {
+    "file": "marketing/video/production/src/EndCardScene.tsx",
+    "bytes": 5036,
+    "sha256": "1e6da14e1413b59e923cc49e2b0ff1d6d3a11d269254d4c65999524ef680d129"
+  },
+  {
+    "file": "marketing/video/production/src/FinalFilm.tsx",
+    "bytes": 778,
+    "sha256": "d075254e3833e328231bcaac53e770238b5c5ef47bc633cfc3ed3c14ded8e171"
+  },
+  {
+    "file": "marketing/video/production/src/index.ts",
+    "bytes": 109,
+    "sha256": "957e481dd33a29b4a55ae0e95dbf763b7e48c37c427ca4bd1275faf34bc07a74"
+  },
+  {
+    "file": "marketing/video/production/src/product-source.css",
+    "bytes": 16530,
+    "sha256": "ad5785a8e6e2ceb06da0c2efd0a4023909d7c93ebc31632d8382c44ec64f8763"
+  },
+  {
+    "file": "marketing/video/production/src/product-theme.json",
+    "bytes": 437,
+    "sha256": "c1955723a9abdf46fec325d9dc5a6fc3bfdd871b27a749660568e1b95226f382"
+  },
+  {
+    "file": "marketing/video/production/src/Root.tsx",
+    "bytes": 1164,
+    "sha256": "c31c357955cf47e41b2dcfdb3f7174a51304e5b26a04f974383e295862a8d09a"
+  },
+  {
+    "file": "marketing/video/production/src/SharedGradient.tsx",
+    "bytes": 785,
+    "sha256": "6766df646a5f0945781558527a8bd56bfae40b07414c686ab01815d2778fb18c"
+  },
+  {
+    "file": "marketing/video/production/src/StageFour.tsx",
+    "bytes": 1970,
+    "sha256": "928f5d283407487049e75151adb2b53ced47cc2de72c260a25b10433c41ced02"
+  },
+  {
+    "file": "marketing/video/production/src/StageOne.tsx",
+    "bytes": 2345,
+    "sha256": "138b7dc12297d119457e399613edcc38ce00432629a37b6c286f83ee573b7439"
+  },
+  {
+    "file": "marketing/video/production/src/StageThree.tsx",
+    "bytes": 1932,
+    "sha256": "6b3cb8c947144d094ea6dd95829a8dbfd602a8dbd6eabb8933852dbf5f62ac44"
+  },
+  {
+    "file": "marketing/video/production/src/StageTwo.tsx",
+    "bytes": 2105,
+    "sha256": "e6b4679869df33aa0d8a0d700ac109e491028fc86f4fbc2ee7ba476bf462be22"
+  }
+]

@@ -1,0 +1,330 @@
+{
+  "pass": true,
+  "scope": "Only interaction SFX replaced; music and picture preserved",
+  "picture": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "frames": 2100,
+    "duration": 35,
+    "color_space": "bt709",
+    "elementary_stream_byte_identical_to_accepted_video": true
+  },
+  "music": {
+    "file_byte_identical": true,
+    "sha256": "80066e4afc73a7796829cab49571eaa738f7d505e58079bf663b1082c7b7ddf8",
+    "pcm_gain_changed": false,
+    "pcm_timing_changed": false,
+    "mix_minus_sfx_minus_accepted_bgm_max_error": 1.1920928955078125e-07
+  },
+  "audio": {
+    "codec": "aac",
+    "rate": 48000,
+    "channels": 2,
+    "decoded_aac_samples": 1680384,
+    "levels": {
+      "input_i": "-19.52",
+      "input_tp": "-2.77",
+      "input_lra": "6.20",
+      "input_thresh": "-30.11",
+      "output_i": "-19.06",
+      "output_tp": "-1.58",
+      "output_lra": "2.90",
+      "output_thresh": "-29.50",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.44"
+    },
+    "lufs_change_from_before": -0.00999999999999801,
+    "clipped_samples": 0,
+    "aac_to_master_correlation": 0.9999113717167353,
+    "aac_offset_samples": 0,
+    "stem_sum_max_error": 0.0
+  },
+  "sfx": {
+    "total_events": 16,
+    "initial_typing_contacts": 6,
+    "distinct_final_takes": 16,
+    "pitch_shifts": 0,
+    "new_exact_control_duplicates": 0,
+    "maximum_acoustic_onset_offset_ms": 7.64583333333313,
+    "onset_checks": [
+      {
+        "event": "type-1",
+        "visual_frame": 268,
+        "audible_onset_offset_ms": 4.95833333333362
+      },
+      {
+        "event": "type-3",
+        "visual_frame": 281,
+        "audible_onset_offset_ms": -0.12500000000059686
+      },
+      {
+        "event": "type-4",
+        "visual_frame": 288,
+        "audible_onset_offset_ms": 6.833333333333691
+      },
+      {
+        "event": "type-6",
+        "visual_frame": 301,
+        "audible_onset_offset_ms": 7.64583333333313
+      },
+      {
+        "event": "type-8",
+        "visual_frame": 315,
+        "audible_onset_offset_ms": 1.291666666666913
+      },
+      {
+        "event": "type-9",
+        "visual_frame": 321,
+        "audible_onset_offset_ms": 5.291666666667361
+      },
+      {
+        "event": "add-press",
+        "visual_frame": 366,
+        "audible_onset_offset_ms": 4.354166666667325
+      },
+      {
+        "event": "add-result",
+        "visual_frame": 372,
+        "audible_onset_offset_ms": 7.333333333333414
+      },
+      {
+        "event": "deadline-open",
+        "visual_frame": 759,
+        "audible_onset_offset_ms": 4.999999999999005
+      },
+      {
+        "event": "deadline-input",
+        "visual_frame": 813,
+        "audible_onset_offset_ms": 4.6041666666667425
+      },
+      {
+        "event": "deadline-close",
+        "visual_frame": 864,
+        "audible_onset_offset_ms": 5.70833333333276
+      },
+      {
+        "event": "checkbox-press",
+        "visual_frame": 1125,
+        "audible_onset_offset_ms": 4.458333333332121
+      },
+      {
+        "event": "checkbox-result",
+        "visual_frame": 1131,
+        "audible_onset_offset_ms": 5.416666666665293
+      },
+      {
+        "event": "pending-filter",
+        "visual_frame": 1221,
+        "audible_onset_offset_ms": 4.7499999999978115
+      },
+      {
+        "event": "settings",
+        "visual_frame": 1605,
+        "audible_onset_offset_ms": 4.16666666666643
+      },
+      {
+        "event": "backup",
+        "visual_frame": 1662,
+        "audible_onset_offset_ms": 5.9791666666662024
+      }
+    ],
+    "silence_outside_declared_events": true
+  },
+  "source_licenses_checked": true,
+  "protected_files": [
+    {
+      "file": "marketing/video/production/out/score-2026-10-18/TickList-original-score-1080p60.mp4",
+      "bytes": 5946635,
+      "sha256": "efbd2c32adfd5e10008ff345e11e8cf9d7ebac507edfdb1279b9d1e910decdfa",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/out/score-2026-10-18/TickList-original-bgm-35s.wav",
+      "bytes": 10080102,
+      "sha256": "80066e4afc73a7796829cab49571eaa738f7d505e58079bf663b1082c7b7ddf8",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/out/score-2026-10-18/TickList-original-bgm-35s.mp3",
+      "bytes": 1122093,
+      "sha256": "9ebfd11dfca6a4d39f87bccfb3d1702a6f35c5b29f4b4396d6ce9e1fe0d5165a",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/out/score-2026-10-18/TickList-soundtrack-35s.wav",
+      "bytes": 10080102,
+      "sha256": "afc69227bd5da50f2f0f237ea425164b80d656b6fba56525327ea56e2f778047",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/out/score-2026-10-18/TickList-ui-35s.wav",
+      "bytes": 10080102,
+      "sha256": "23b0ddef9e4f5f09fe194e34f85986636bb43e137871f05df15181189d9cef49",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/out/score-2026-10-18/TickList-picture-current-1080p60.mp4",
+      "bytes": 4819522,
+      "sha256": "f2229e59df29eaac451d76e3611fd6c65e23c22559c6f002dfdc437331853280",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/AudioReviewV2.tsx",
+      "bytes": 1184,
+      "sha256": "50db44b9d28a1b482cba40520751b4754867f9d1375a1075606a83ab2ea46dcf",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/BackupScene.tsx",
+      "bytes": 9989,
+      "sha256": "56ef204af2045f5342826b52e63955b630825706dda139537ae60975b4aac795",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/brand-logo-data.ts",
+      "bytes": 6130,
+      "sha256": "85ea089f7a6c0945bfeaeee0aac4dc7f29cb6399f3a621e3d1d80d66756c2b1d",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/BrandOpening.tsx",
+      "bytes": 15274,
+      "sha256": "56537437123811691c4cb210ee1de48f19d7201fd47cb688fc7d71891516f8b1",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/BrandOpeningV2.tsx",
+      "bytes": 13648,
+      "sha256": "eea5142e54fa9694bdddc154c4bd9cf69c4f8ca5b70e36aaf03fed910fd50254",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/CompletionScene.tsx",
+      "bytes": 9419,
+      "sha256": "0d2fdeba612394d906af87426d23363c561d087b1ba8181d029ebd567854fe63",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/Composition.tsx",
+      "bytes": 6460,
+      "sha256": "b5078877a75f61fcee37dd534516e9878fbd45ea6a6d9895ea5a5c5a4611e653",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/DeadlineScene.tsx",
+      "bytes": 9889,
+      "sha256": "731bb8797c7434b22c999cb3ff42b3baa6459ed9ec9b2f320a1bd6f0fd1ba2e2",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/EndCardScene.tsx",
+      "bytes": 5036,
+      "sha256": "1e6da14e1413b59e923cc49e2b0ff1d6d3a11d269254d4c65999524ef680d129",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/FinalFilm.tsx",
+      "bytes": 778,
+      "sha256": "d075254e3833e328231bcaac53e770238b5c5ef47bc633cfc3ed3c14ded8e171",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/index.ts",
+      "bytes": 109,
+      "sha256": "957e481dd33a29b4a55ae0e95dbf763b7e48c37c427ca4bd1275faf34bc07a74",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/product-source.css",
+      "bytes": 16530,
+      "sha256": "ad5785a8e6e2ceb06da0c2efd0a4023909d7c93ebc31632d8382c44ec64f8763",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/product-theme.json",
+      "bytes": 437,
+      "sha256": "c1955723a9abdf46fec325d9dc5a6fc3bfdd871b27a749660568e1b95226f382",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/Root.tsx",
+      "bytes": 1164,
+      "sha256": "c31c357955cf47e41b2dcfdb3f7174a51304e5b26a04f974383e295862a8d09a",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/SharedGradient.tsx",
+      "bytes": 785,
+      "sha256": "6766df646a5f0945781558527a8bd56bfae40b07414c686ab01815d2778fb18c",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/StageFour.tsx",
+      "bytes": 1970,
+      "sha256": "928f5d283407487049e75151adb2b53ced47cc2de72c260a25b10433c41ced02",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/StageOne.tsx",
+      "bytes": 2345,
+      "sha256": "138b7dc12297d119457e399613edcc38ce00432629a37b6c286f83ee573b7439",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/StageThree.tsx",
+      "bytes": 1932,
+      "sha256": "6b3cb8c947144d094ea6dd95829a8dbfd602a8dbd6eabb8933852dbf5f62ac44",
+      "unchanged": true
+    },
+    {
+      "file": "marketing/video/production/src/StageTwo.tsx",
+      "bytes": 2105,
+      "sha256": "e6b4679869df33aa0d8a0d700ac109e491028fc86f4fbc2ee7ba476bf462be22",
+      "unchanged": true
+    }
+  ],
+  "whole_file_decode": true,
+  "http_range_seek_verified": true,
+  "browser_playback": {
+    "review_url": "http://localhost:3012/",
+    "loaded": true,
+    "new_video_started": true,
+    "muted": false,
+    "rate": 1,
+    "duration": 35,
+    "observed_time": 6.507618,
+    "paused_at_last_observation": true,
+    "error": null,
+    "old_video_switch_loaded": true,
+    "new_video_switch_loaded": true,
+    "background_qa_tab_closed": true,
+    "continuous_35_seconds_verified": false,
+    "subjective_listening_verified": false
+  },
+  "listening_limit": "This environment cannot ingest audio. Browser playback and measured signal checks do not establish subjective headphone acceptance.",
+  "user_acceptance": {
+    "status": "approved",
+    "date": "2026-10-18",
+    "timezone": "Asia/Shanghai",
+    "source": "direct user message in this chat",
+    "evidence": "视频已通过",
+    "review_url": "http://localhost:3012/",
+    "approved_file": "TickList-natural-ui-1080p60.mp4",
+    "sha256": "207755f45c56c661b968fcb6537f8963e580750b1824303c01f0a4d0f890d8c4",
+    "bytes": 5952035,
+    "duration_seconds": 35,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 60,
+    "version": "自然交互音效版，保留已满意的背景音乐与视觉",
+    "original_versions_preserved": true,
+    "media_regenerated_at_acceptance": false,
+    "technical_verification": "verification.json",
+    "media_backup": "TickList-natural-sfx-backup-2026-10-18.zip",
+    "media_backup_sha256": "5ea5c233e021dcff0640aad2fb4c0b556fc5025536da6cc463e9da8f633eac37"
+  }
+}

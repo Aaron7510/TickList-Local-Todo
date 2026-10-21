@@ -1,0 +1,38 @@
+[
+  {
+    "name": "keyboard-supersnd",
+    "page": "https://freesound.org/people/supersnd/sounds/215744/",
+    "cc0_link_present": true,
+    "observed_audio_urls": [
+      "https://cdn.freesound.org/previews/215/215744_3877322-hq.mp3",
+      "https://cdn.freesound.org/previews/215/215744_3877322-lq.mp3",
+      "https://cdn.freesound.org/previews/215/215744_3877322-lq.ogg",
+      "https://freesound.orghttps://cdn.freesound.org/previews/215/215744_3877322-lq.mp3"
+    ],
+    "html_sha256": "f6368616d76532448ebd9f049c05bf4da531561f717bc65a69223b5a1bc98def"
+  },
+  {
+    "name": "finger-pikachu09",
+    "page": "https://freesound.org/people/pikachu09/sounds/204605/",
+    "cc0_link_present": true,
+    "observed_audio_urls": [
+      "https://cdn.freesound.org/previews/204/204605_3439254-hq.mp3",
+      "https://cdn.freesound.org/previews/204/204605_3439254-lq.mp3",
+      "https://cdn.freesound.org/previews/204/204605_3439254-lq.ogg",
+      "https://freesound.orghttps://cdn.freesound.org/previews/204/204605_3439254-lq.mp3"
+    ],
+    "html_sha256": "be80f56a32f4f3ec2d1d239000e11b0d96a378390ef4c35d42eb766b99c53795"
+  },
+  {
+    "name": "taps-kyles",
+    "page": "https://freesound.org/people/kyles/sounds/452621/",
+    "cc0_link_present": true,
+    "observed_audio_urls": [
+      "https://cdn.freesound.org/previews/452/452621_612689-hq.mp3",
+      "https://cdn.freesound.org/previews/452/452621_612689-lq.mp3",
+      "https://cdn.freesound.org/previews/452/452621_612689-lq.ogg",
+      "https://freesound.orghttps://cdn.freesound.org/previews/452/452621_612689-lq.mp3"
+    ],
+    "html_sha256": "14ae8a695af6e580eeb9ca61592a9c558026a738f33f59ea6391ef33d01bcabc"
+  }
+]

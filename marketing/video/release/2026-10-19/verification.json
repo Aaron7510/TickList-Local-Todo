@@ -1,0 +1,39 @@
+{
+  "pass": true,
+  "date": "2026-10-19",
+  "scope": "Final file registration; byte-identical copies only. No re-render, re-encode, music or SFX changes.",
+  "video": {
+    "codec": "h264",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 60,
+    "frames": 2100,
+    "duration_seconds": 35.0,
+    "pixel_format": "yuv420p",
+    "color_space": "bt709",
+    "audio_codec": "aac",
+    "audio_rate": 48000,
+    "audio_channels": 2,
+    "full_file_decode": true,
+    "matches_approved_sha256": true
+  },
+  "cover": {
+    "codec": "mjpeg",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "decode": true,
+    "byte_identical_to_existing_cover": true,
+    "visual_inspection": "Existing cover viewed during finalization; branding and slogan retained."
+  },
+  "copy_hashes_match": true,
+  "protected_source_files_unchanged": true,
+  "protected_file_count": 31,
+  "pre_edit_zip_verified": true,
+  "subjective_acceptance": "Direct user approval, not inferred from automated checks.",
+  "browser_playback_retested_this_turn": false,
+  "external_publication_performed": false
+}

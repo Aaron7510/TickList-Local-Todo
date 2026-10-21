@@ -1,0 +1,34 @@
+[
+  {
+    "name": "acestep-5Hz-lm-1.7B-Q8_0.gguf",
+    "bytes": 1975837568,
+    "sha256": "726f99a82f050b32ebc5c5e36acaa9d7acd06bfe5e579a62b00e0d0d6d0b7ec6",
+    "expected_sha256": "726f99a82f050b32ebc5c5e36acaa9d7acd06bfe5e579a62b00e0d0d6d0b7ec6",
+    "verified": true,
+    "url": "https://huggingface.co/Serveurperso/ACE-Step-1.5-GGUF/resolve/main/acestep-5Hz-lm-1.7B-Q8_0.gguf"
+  },
+  {
+    "name": "acestep-v15-turbo-Q8_0.gguf",
+    "bytes": 2549528000,
+    "sha256": "288f708a61cfc241013a98a62f98ba331f83fe34d0d3559acdd9b0f6a2f7cd6b",
+    "expected_sha256": "288f708a61cfc241013a98a62f98ba331f83fe34d0d3559acdd9b0f6a2f7cd6b",
+    "verified": true,
+    "url": "https://huggingface.co/Serveurperso/ACE-Step-1.5-GGUF/resolve/main/acestep-v15-turbo-Q8_0.gguf"
+  },
+  {
+    "name": "Qwen3-Embedding-0.6B-Q8_0.gguf",
+    "bytes": 784144960,
+    "sha256": "972f23255e46adfe744a0eb9a0039f3c63988f65753b0968d776e8b27168c321",
+    "expected_sha256": "972f23255e46adfe744a0eb9a0039f3c63988f65753b0968d776e8b27168c321",
+    "verified": true,
+    "url": "https://huggingface.co/Serveurperso/ACE-Step-1.5-GGUF/resolve/main/Qwen3-Embedding-0.6B-Q8_0.gguf"
+  },
+  {
+    "name": "vae-BF16.gguf",
+    "bytes": 337420928,
+    "sha256": "0599862ac5d15cd308e1d2e368373aea6c02e25ebd1737ad4a4562a0901b0ef8",
+    "expected_sha256": "0599862ac5d15cd308e1d2e368373aea6c02e25ebd1737ad4a4562a0901b0ef8",
+    "verified": true,
+    "url": "https://huggingface.co/Serveurperso/ACE-Step-1.5-GGUF/resolve/main/vae-BF16.gguf"
+  }
+]
