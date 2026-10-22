@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "recordType": "curated-historical-production-verification",
+  "recordedOn": "2026-10-18",
+  "curatedOn": "2026-10-22",
+  "originalVerificationSha256": "724949cf2da45502cee1777f2242cf852aade67f099077ae1f7b749f5c390b5a",
+  "notANewVerification": true,
+  "picture": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "frames": 2100,
+    "duration": 35,
+    "color_space": "bt709",
+    "elementary_stream_byte_identical_to_accepted_video": true
+  },
+  "music": {
+    "file_byte_identical": true,
+    "sha256": "80066e4afc73a7796829cab49571eaa738f7d505e58079bf663b1082c7b7ddf8",
+    "pcm_gain_changed": false,
+    "pcm_timing_changed": false,
+    "mix_minus_sfx_minus_accepted_bgm_max_error": 1.1920928955078125e-7
+  },
+  "audio": {
+    "codec": "aac",
+    "rate": 48000,
+    "channels": 2,
+    "decoded_aac_samples": 1680384,
+    "levels": {
+      "input_i": "-19.52",
+      "input_tp": "-2.77",
+      "input_lra": "6.20",
+      "input_thresh": "-30.11",
+      "output_i": "-19.06",
+      "output_tp": "-1.58",
+      "output_lra": "2.90",
+      "output_thresh": "-29.50",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.44"
+    },
+    "lufs_change_from_before": -0.00999999999999801,
+    "clipped_samples": 0,
+    "aac_to_master_correlation": 0.9999113717167353,
+    "aac_offset_samples": 0,
+    "stem_sum_max_error": 0
+  },
+  "sfx": {
+    "total_events": 16,
+    "initial_typing_contacts": 6,
+    "distinct_final_takes": 16,
+    "pitch_shifts": 0,
+    "new_exact_control_duplicates": 0,
+    "maximum_acoustic_onset_offset_ms": 7.64583333333313,
+    "onset_checks": [
+      {
+        "event": "type-1",
+        "visual_frame": 268,
+        "audible_onset_offset_ms": 4.95833333333362
+      },
+      {
+        "event": "type-3",
+        "visual_frame": 281,
+        "audible_onset_offset_ms": -0.12500000000059686
+      },
+      {
+        "event": "type-4",
+        "visual_frame": 288,
+        "audible_onset_offset_ms": 6.833333333333691
+      },
+      {
+        "event": "type-6",
+        "visual_frame": 301,
+        "audible_onset_offset_ms": 7.64583333333313
+      },
+      {
+        "event": "type-8",
+        "visual_frame": 315,
+        "audible_onset_offset_ms": 1.291666666666913
+      },
+      {
+        "event": "type-9",
+        "visual_frame": 321,
+        "audible_onset_offset_ms": 5.291666666667361
+      },
+      {
+        "event": "add-press",
+        "visual_frame": 366,
+        "audible_onset_offset_ms": 4.354166666667325
+      },
+      {
+        "event": "add-result",
+        "visual_frame": 372,
+        "audible_onset_offset_ms": 7.333333333333414
+      },
+      {
+        "event": "deadline-open",
+        "visual_frame": 759,
+        "audible_onset_offset_ms": 4.999999999999005
+      },
+      {
+        "event": "deadline-input",
+        "visual_frame": 813,
+        "audible_onset_offset_ms": 4.6041666666667425
+      },
+      {
+        "event": "deadline-close",
+        "visual_frame": 864,
+        "audible_onset_offset_ms": 5.70833333333276
+      },
+      {
+        "event": "checkbox-press",
+        "visual_frame": 1125,
+        "audible_onset_offset_ms": 4.458333333332121
+      },
+      {
+        "event": "checkbox-result",
+        "visual_frame": 1131,
+        "audible_onset_offset_ms": 5.416666666665293
+      },
+      {
+        "event": "pending-filter",
+        "visual_frame": 1221,
+        "audible_onset_offset_ms": 4.7499999999978115
+      },
+      {
+        "event": "settings",
+        "visual_frame": 1605,
+        "audible_onset_offset_ms": 4.16666666666643
+      },
+      {
+        "event": "backup",
+        "visual_frame": 1662,
+        "audible_onset_offset_ms": 5.9791666666662024
+      }
+    ],
+    "silence_outside_declared_events": true
+  },
+  "wholeFileDecode": true,
+  "listeningLimit": "This environment cannot ingest audio. Browser playback and measured signal checks do not establish subjective headphone acceptance.",
+  "userAcceptance": {
+    "status": "approved",
+    "date": "2026-10-18",
+    "timezone": "Asia/Shanghai",
+    "source": "direct user message in this chat",
+    "evidence": "视频已通过",
+    "review_url": "http://localhost:3012/",
+    "approved_file": "TickList-natural-ui-1080p60.mp4",
+    "sha256": "207755f45c56c661b968fcb6537f8963e580750b1824303c01f0a4d0f890d8c4",
+    "bytes": 5952035,
+    "duration_seconds": 35,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 60,
+    "version": "自然交互音效版，保留已满意的背景音乐与视觉",
+    "original_versions_preserved": true,
+    "media_regenerated_at_acceptance": false,
+    "technical_verification": "verification.json",
+    "media_backup": "TickList-natural-sfx-backup-2026-10-18.zip",
+    "media_backup_sha256": "5ea5c233e021dcff0640aad2fb4c0b556fc5025536da6cc463e9da8f633eac37"
+  },
+  "originalArchivedLocally": true
+}

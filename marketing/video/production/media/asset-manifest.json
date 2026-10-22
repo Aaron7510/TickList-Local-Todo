@@ -124,23 +124,13 @@
     },
     {
       "path": "media/recordings/CREDITS.md",
-      "bytes": 2013,
-      "sha256": "b43eba43cb079e4d19f538959945c63f138b03deec25389905948f0aa3e98570"
-    },
-    {
-      "path": "media/recordings/finger-pikachu09.html",
-      "bytes": 43164,
-      "sha256": "be80f56a32f4f3ec2d1d239000e11b0d96a378390ef4c35d42eb766b99c53795"
+      "bytes": 2080,
+      "sha256": "cb322320c57ee414d47056d18db4d8d7fc114338a9798cd8b3e80827728fdf50"
     },
     {
       "path": "media/recordings/finger-pikachu09.mp3",
       "bytes": 134998,
       "sha256": "7bafb0c887dc9b0917b6d083cd8c6fa1c01a46e0c24861e1c5231a9f67744dea"
-    },
-    {
-      "path": "media/recordings/keyboard-supersnd.html",
-      "bytes": 41348,
-      "sha256": "f6368616d76532448ebd9f049c05bf4da531561f717bc65a69223b5a1bc98def"
     },
     {
       "path": "media/recordings/keyboard-supersnd.mp3",
@@ -156,11 +146,6 @@
       "path": "media/recordings/source-manifest.json",
       "bytes": 4035,
       "sha256": "38fdabf2c76e6fa407e3ba2bb046fa54713616f404610e49e269ddbf44109994"
-    },
-    {
-      "path": "media/recordings/taps-kyles.html",
-      "bytes": 40319,
-      "sha256": "14ae8a695af6e580eeb9ca61592a9c558026a738f33f59ea6391ef33d01bcabc"
     },
     {
       "path": "media/recordings/taps-kyles.mp3",
@@ -236,5 +221,8 @@
       "sha256": "e6b4679869df33aa0d8a0d700ac109e491028fc86f4fbc2ee7ba476bf462be22"
     }
   ],
-  "lockSha256": "ee3aa46a54874423b781746330bf685beb06ab042a0f951934b1c2d08cafe9e7"
+  "lockSha256": "ee3aa46a54874423b781746330bf685beb06ab042a0f951934b1c2d08cafe9e7",
+  "archivedSourcePages": {
+    "policy": "Original source HTML is archived locally; hashes remain in media/recordings/source-manifest.json. Not needed for rendering or verification."
+  }
 }

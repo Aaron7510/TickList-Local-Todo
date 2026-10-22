@@ -1,6 +1,6 @@
 # 实录音效素材与许可
 
-本轮只使用下列三份真实录音，没有使用音效生成模型或旧振荡器 Click。三份来源页面均明确标注 Creative Commons 0；原始网页及下载音频的摘要记录在 source-manifest.json 和 page-observations.json。
+本轮只使用下列三份真实录音，没有使用音效生成模型或旧振荡器 Click。三份来源页面均明确标注 Creative Commons 0；原始网页及下载音频的摘要记录在 source-manifest.json 和 page-observations.json；网页快照保存在本地档案，不随当前 Git 源码分发。
 
 | 素材 | 作者与原始页面 | 许可 | 本轮用途 |
 | --- | --- | --- | --- |

@@ -17,6 +17,3 @@
 /marketing/video/production/public/brand/** -text whitespace=cr-at-eol
 /marketing/video/release/2026-10-19/*.json -text whitespace=cr-at-eol
 /marketing/video/release/2026-10-19/SHA256SUMS.txt -text whitespace=cr-at-eol
-
-# Downloaded source pages are archived verbatim, including original spacing.
-/marketing/video/production/media/recordings/*.html -text -whitespace

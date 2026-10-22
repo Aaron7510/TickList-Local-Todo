@@ -1,11 +1,11 @@
-# TickList 视频
+# TickList 宣传视频
 
-2026-10-21：最终正片、封面和媒体校验文件已上传[私有草稿](https://github.com/Aaron7510/TickList-Local-Todo/releases/tag/untagged-120f1e02c48e498c9327)，服务器摘要与本地一致，尚未正式发布。
+35 秒、1920×1080、60fps。画面、配乐和自然交互音效于 2026-10-19 最终确认；本轮仅整理公开资料。
 
-[打开宣传片 MP4](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-35s-1080p60.mp4) · [查看封面](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-Cover-1920x1080.jpg) · [媒体校验文件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-SHA256SUMS.txt)。以上地址需要仓库访问权限。
+- [完整制作过程](制作过程.md)：画面编排、配乐取舍、实录音效与检查依据。
+- [最终媒体与摘要](release/2026-10-19/README.md) · [定版登记](定版登记.md)
+- [编辑工程与命令](production/README.md) · [制作证据索引](production/evidence/2026-10-19/README.md)
+- [配乐记录](原创配乐制作记录-2026-10-18.md) · [音效记录](交互音效优化记录-2026-10-18.md)
+- [来源与许可](production/media/recordings/CREDITS.md) · [工程权利范围](production/RIGHTS.md)
 
-- [定版登记](定版登记.md)：2026-10-19 批准的正片、封面与摘要。
-- [最小可修改工程](production/README.md)：场景源码、必要素材及制作/检查命令。
-- [清理报告](../../docs/maintenance/视频废案清理报告.md)：实际删除范围、迁移、空间与验证边界。
-
-历史试听、旧播放器、阶段布局、旧模型与重复备份已清理。最终 StageOne–StageFour 组合链继续保留。定版交付未重制；历史机器验收原样保存。
+视频、封面及媒体校验文件已上传[现有私有草稿](https://github.com/Aaron7510/TickList-Local-Todo/releases/tag/untagged-120f1e02c48e498c9327)，尚未正式发布。Git 中没有大体积音频、成片或模型；编辑完整有声工程需恢复必要输入。

@@ -1,45 +1,41 @@
 # GitHub 上传与发布记录
 
-更新日期：2026-10-21。仓库：Aaron7510/TickList-Local-Todo，默认分支 main。当前保留私有仓库与草稿 Release；整理源码已推送，媒体已由用户手动补入草稿并通过服务器摘要审核；本轮同步实际状态与链接，不公开仓库、不发布 Release、不启用 Pages。
+更新日期：2026-10-22。仓库：[Aaron7510/TickList-Local-Todo](https://github.com/Aaron7510/TickList-Local-Todo)，默认分支 main。仓库目前私有，v0.1.0 仍为草稿，Pages 未启用。
 
-## 已建立的产品发布基准
+## 应用发布基准
 
-- v0.1.0 标签已经建立，指向 `98960449fff1aed015aa0ad1963470c5e8fb4e10`。该标签保持不变。文档及视频工程整理提交为 9d6cef1，已进入私有 main。
-- [main CI](https://github.com/Aaron7510/TickList-Local-Todo/actions/runs/37800397416)与[标签 CI](https://github.com/Aaron7510/TickList-Local-Todo/actions/runs/37800932681)已通过；这些结果对应产品基准；整理提交 9d6cef1 的[新 CI](https://github.com/Aaron7510/TickList-Local-Todo/actions/runs/39557948638)及干净检出检查、打包也已通过。
-- 产品基准 9896044 的干净检出检查和打包已通过，正式文件名的离线包 `TickList-v0.1.0.zip` 已生成并附 `.sha256`，保存在本地 `release-artifacts/`；38 个解压文件齐全，35 项清单摘要一致。
-- ZIP SHA-256：`894df9843d897c4e6c475bb70d350f63dd47b17f02ec72abec045dfd53350738`。
-- 应用 ZIP、校验文件和中文说明已保存于[现有私有草稿](https://github.com/Aaron7510/TickList-Local-Todo/releases/tag/untagged-120f1e02c48e498c9327)。2026-10-21 再次核对现有五份附件的名称、大小及 SHA-256，均与本地一致，无多余附件。
-- Chrome/Edge 的 HTTP 操作、JSON/Markdown 实际下载、恢复、两页冲突与减少动态效果已有通过记录。本地 file 界面由用户人工操作，下载文件逐字段核对。证据日期与范围见[审查记录](../maintenance/代码审查.md)。
+- v0.1.0 保持指向 98960449fff1aed015aa0ad1963470c5e8fb4e10，不随文档整理移动。
+- 应用基准的 [main CI](https://github.com/Aaron7510/TickList-Local-Todo/actions/runs/37800397416) 和[标签 CI](https://github.com/Aaron7510/TickList-Local-Todo/actions/runs/37800932681)通过。
+- 整理前的 main 文档提交为 7a064245a977cf269ec08bab1cd11348c0a438fa，[该提交 CI](https://github.com/Aaron7510/TickList-Local-Todo/actions/runs/39560236648)通过。后续整理提交应核对自身 CI，不沿用旧结果。
+- 离线 ZIP 为 157487 字节，SHA-256 为 894df9843d897c4e6c475bb70d350f63dd47b17f02ec72abec045dfd53350738；解压 38 个文件、35 项摘要已在原发布验收中核对。
+- Chrome/Edge 的 HTTP 与 file 下载恢复验收见[审查摘要](../maintenance/代码审查.md)。
 
-产品运行代码没有变化时，保留现有 v0.1.0 标签及应用 ZIP；本轮整理以新提交进入 main，不移动既有标签，不把宣传媒体塞入应用离线包。若运行代码变化，再另行确认版本及验收范围。
+## 现有草稿
 
-## 宣传视频交付
+[现有 v0.1.0 草稿](https://github.com/Aaron7510/TickList-Local-Todo/releases/tag/untagged-120f1e02c48e498c9327)，Release ID 为 406984592。
 
-用户已确认画面、配乐和自然交互音效。以下两份媒体已于 2026-10-21 上传至私有草稿，并附媒体校验文件：
+| 附件 | 字节数 |
+| --- | ---: |
+| TickList-v0.1.0.zip | 157487 |
+| TickList-v0.1.0.zip.sha256 | 86 |
+| TickList-Promo-35s-1080p60.mp4 | 5952035 |
+| TickList-Promo-Cover-1920x1080.jpg | 138123 |
+| TickList-Promo-SHA256SUMS.txt | 198 |
 
-| 用途 | 文件名 | 本地位置 |
-| --- | --- | --- |
-| 宣传正片 | TickList-Promo-35s-1080p60.mp4 | `marketing/video/release/2026-10-19/public/TickList-Promo-35s-1080p60.mp4` |
-| 横版封面 | TickList-Promo-Cover-1920x1080.jpg | `marketing/video/release/2026-10-19/public/TickList-Promo-Cover-1920x1080.jpg` |
+2026-10-22 发布前核对：五份附件的名称、大小和服务器摘要与本地一致。该结论不是正式附件实际下载或播放验收。
 
-规格、批准及摘要见[定版登记](../../marketing/video/定版登记.md)。独立 WAV、试听、模型与制作备份不作为宣传附件。实际草稿附件：[宣传片 MP4](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-35s-1080p60.mp4)、[封面](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-Cover-1920x1080.jpg)和[媒体校验文件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-SHA256SUMS.txt)。链接需要仓库权限，正式发布后需复核并更新为正式地址。
+## 本次资料整理
 
-## 已完成与后续步骤
+用户选择执行文档收束与可追溯归档，并公开视频制作过程。公开内容包括最终画面源码、当前制作脚本、配乐选择、音效来源与处理、必要参数及最终验收摘要；模型下载、重复备份、旧播放器说明和未选字体候选移至本地档案。详见[执行记录](仓库整理记录-2026-10-22.md)和[上传范围](上传范围说明.md)。
 
-1. 整理源码已提交并推送私有 main（9d6cef1），远端 SHA 一致，该提交 CI 与干净检出检查、打包通过。既有 v0.1.0 标签不移动。
-2. 用户已手动上传 MP4、封面及媒体校验文件；API 核对五份草稿附件大小与 SHA-256，均与本地一致。正式公开后的实际下载与播放尚未复验。
-3. 本次同步 README、发布说明和视频现行文档中的实际附件入口与状态；文档提交仍需按实际提交确认 CI，不把旧 CI 结果当作新提交结果。
-4. 当前草稿地址为[此处](https://github.com/Aaron7510/TickList-Local-Todo/releases/tag/untagged-120f1e02c48e498c9327)。草稿保存或正式发布可能改变附件地址，届时应重新查询并更新链接；原机器验收及历史记录不改写。
-5. 公开仓库与发布 Release 继续等待用户执行时确认。正式发布后实际下载应用 ZIP 与校验文件，核对 SHA-256 和解压清单，并复验宣传片和封面访问。当前不执行公开操作。
+用户指定公开时间为 2026-10-22 北京时间 22:50。到时复核完成，但 Windows 网页工具无法可靠识别目标 URL，公开操作未执行；后续本轮授权仅整理资料。仓库和 Release 状态不得提前写成已公开。
 
-## 上传范围与许可
+## 后续发布
 
-已有产品源码保持既定范围；新增视频工程按[上传范围说明](上传范围说明.md)逐文件选择，不整目录提交 marketing。必要离线音频按摘要单独保存与传递；源码单独检出不带完整制作素材，恢复素材后才能使用完整视频时间轴。
+1. 完成本次提交并确认对应 CI。
+2. 在目标仓库将可见性改为 Public，发布现有草稿；保留现有标签、应用 ZIP 和五份附件，不启用 Pages。
+3. 重新读取正式 Release 和附件 URL，更新 README 与当前文档。
+4. 实际下载应用 ZIP、校验文件和媒体附件，核对摘要、解压内容及两页面入口，并复验视频和封面访问。
+5. 将实际验收结果记录、推送，并确认新提交 CI。
 
-archive、dist、release-artifacts、清理明细、内部验收截图、环境配置、真实任务备份和历史媒体不提交。公开恢复样例为 tests/fixtures/valid-backup.json。
-
-网页运行无需安装依赖。产品 Node 工具只用于检查、预览与打包；视频工程依赖另行安装。CI 权限为 contents: read，只检查和打包，不部署。
-
-保持 todo.list.v3、aaron-todo-backup 和备份版本 1。代码采用 MIT；品牌及素材按[独立说明](../../BRAND-LICENSE.md)处理，不分发字体文件。上传源码不会迁移浏览器清单；无云同步、多页自动合并或手机端适配承诺。
-
-版本文案见[发布说明草稿](v0.1.0说明.md)，视频现行入口见[视频总入口](../../marketing/video/README.md)。
+网页工具要求执行时确认时，应当场取得确认；无法可靠识别目标 URL 时由用户手动完成公开与发布，不绕过限制。

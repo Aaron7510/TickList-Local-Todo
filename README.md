@@ -60,7 +60,7 @@ npm run serve
 
 ## 许可
 
-代码采用 [MIT 许可](LICENSE)，Copyright (c) 2026 Soren。品牌图形及截图按 [品牌与素材说明](BRAND-LICENSE.md) 授权随项目展示和分发，不属于代码 MIT 许可范围，也不授予第三方字体分发权。
+网页应用代码、通用工具、测试和文字文档采用 [MIT 许可](LICENSE)，Copyright (c) 2026 Soren。视频制作工程另见其[权利说明](marketing/video/production/RIGHTS.md)。品牌图形及截图按 [品牌与素材说明](BRAND-LICENSE.md) 授权随项目展示和分发，不属于代码 MIT 许可范围，也不授予第三方字体分发权。
 
 ## 数据与备份
 
@@ -72,41 +72,24 @@ npm run serve
 
 损坏数据会保留原键并尝试写入 recovery 副本；副本保留失败时禁止覆盖。副本尚无用户恢复入口。多页写入通过“保存前检查上次读取值”防止旧数据覆盖，出现冲突时先备份本页再刷新；尚无自动合并或跨页原子锁，建议一个页面编辑。
 
-## 维护与发布
+## 开发与维护
 
-在项目根目录运行：
+网页运行无需安装依赖。开发检查和打包使用 Node.js 24：
 
-```text
-npm run check
-npm run package
-```
+- npm run check：语法、资源引用及存储、语言、任务流程、介绍页测试。
+- npm run package：生成 dist/ 静态目录和文件摘要，包含两个页面、运行资产、许可和使用说明。
 
-检查包含 JavaScript 语法、资源路径及大小写、页面标签引用、四组隔离自动测试。测试不访问真实清单。发布命令只将两个页面和运行资产复制到 `dist/`，附带文件摘要清单；生成目录与本地归档不进入源码仓库。
-
-| 目录 | 职责 |
+| 目录 | 用途 |
 | --- | --- |
-| `index.html` / `landing.html` | 清单 / 产品介绍 |
-| `assets/` | 页面脚本、样式及正式运行资产 |
-| `tests/` | 存储、语言、任务流程及滚动进度检查 |
-| `tools/` | 无第三方依赖的检查、预览和发布脚本 |
-| `brand/` | 品牌规范、矢量生成源与字体比较 |
-| `docs/` | 审查、优化日志、计划及公开示例截图 |
-| `marketing/video/` | 宣传视频策划与定版登记 |
-| `archive/` | 本地历史归档，默认忽略上传 |
+| assets/ | 页面脚本、样式及运行资产 |
+| tests/、tools/ | 自动检查、预览与打包 |
+| brand/ | 正式品牌规范与资产生成源 |
+| docs/ | 版本说明、最终审查及公开示例 |
+| marketing/video/ | 公开的视频制作过程、最终工程和来源记录 |
 
-脚本职责：`storage.js` 管数据校验与保存，`drag.js` 管拖动，`app.js` 协调任务交互，`theme.js` 管主题，`language.js/css` 管共用语言入口，`app-i18n.js` 和 `landing-i18n.js` 管翻译，`landing.js` 管滚动渐显。仍采用普通脚本顺序加载，支持本地文件打开。
+- [版本记录](CHANGELOG.md) · [当前验收与已知限制](docs/maintenance/代码审查.md)
+- [发布记录](docs/release/GitHub上传计划.md) · [v0.1.0 说明](docs/release/v0.1.0说明.md)
+- [品牌规范](brand/README.md) · [正式品牌预览](brand/preview.html)
+- [宣传视频制作过程](marketing/video/制作过程.md) · [视频编辑工程](marketing/video/production/README.md)
 
-2026-10-21 发布资料复核：产品运行代码及应用 ZIP 仍对应 v0.1.0 基准 `9896044`。文档和视频工程整理已通过提交 `9d6cef1` 同步私有仓库，[该提交 CI](https://github.com/Aaron7510/TickList-Local-Todo/actions/runs/39557948638)和干净检出检查、打包均通过；五份草稿附件的服务器摘要核对通过。Chrome/Edge 的浏览器证据来自 2026-10-08，本轮未重做人工浏览器验收或正式附件下载播放复验。仓库仍为私有，正式 Release 尚未发布；详细证据见审查记录。
-
-- [当前代码审查](docs/maintenance/代码审查.md)
-- [目录整理记录](docs/maintenance/目录归档检查.md)
-- [每日优化日志](docs/maintenance/优化日志.md)
-- [GitHub 上传计划](docs/release/GitHub上传计划.md)
-- [本次上传范围与白名单生成](docs/release/上传范围说明.md)
-- [2026-10-06 今日计划](docs/plan/2026-10-06.md)
-- [品牌规范](brand/README.md) · [品牌预览](brand/preview.html)
-- [宣传视频定版登记与公开文件](marketing/video/定版登记.md)
-- [最小视频工程](marketing/video/production/README.md) · [废案清理报告](docs/maintenance/视频废案清理报告.md)
-- [宣传视频策划](marketing/video/品牌IP与宣传视频策划.md)
-
-正式字标为 Segoe UI Bold，勾号作为品牌核心，开发者为 Soren。代码和品牌许可范围见上方许可说明。
+当前仓库与 Release 仍为私有/草稿。应用标签基准为 9896044；公开状态以发布记录及 GitHub 实际状态为准。

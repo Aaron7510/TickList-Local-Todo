@@ -7,6 +7,7 @@ let scripts = 0, references = 0;
 function collect(dir) {
   return fs.readdirSync(path.join(root, dir), { withFileTypes: true }).flatMap(e => {
     const name = path.join(dir, e.name);
+    if (e.isDirectory() && ['node_modules', 'out', 'history', 'layout', 'references', 'cleanup'].includes(e.name)) return [];
     return e.isDirectory() ? collect(name) : [name];
   });
 }
@@ -44,13 +45,7 @@ for (const name of ['index.html', 'landing.html', 'brand/preview.html']) {
 for (const name of collect('assets').filter(n => n.endsWith('.css'))) {
   for (const m of fs.readFileSync(path.join(root, name), 'utf8').matchAll(/url\(["']?([^"')]+)["']?\)/g)) checkRef(name, m[1]);
 }
-for (const name of ['README.md', 'brand/README.md', ...collect('docs').filter(n => n.endsWith('.md'))]) {
+for (const name of ['README.md', 'CHANGELOG.md', 'brand/README.md', ...collect('docs').filter(n => n.endsWith('.md')), ...collect('marketing/video').filter(n => n.endsWith('.md'))]) {
   for (const m of fs.readFileSync(path.join(root, name), 'utf8').matchAll(/!?\[[^\]]*\]\(([^\s)]+)\)/g)) checkRef(name, m[1]);
-}
-// Font paths in preview.js are assembled dynamically, so check the complete candidate set separately.
-const preview = fs.readFileSync(path.join(root, 'brand/preview.html'), 'utf8');
-for (const m of preview.matchAll(/(?:src|data-(?:light|dark))="(font-options\/[^"]+)"/g)) checkRef('brand/preview.html', m[1]);
-for (const m of preview.matchAll(/data-font="([^"]+)"/g)) {
-  for (const mode of ['light', 'dark']) checkRef('brand/preview.html', `font-options/${m[1]}-${mode}.svg`);
 }
 console.log(`Project checks passed: ${scripts} JavaScript files, ${references} local references, unique page ids.`);

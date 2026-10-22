@@ -12,54 +12,33 @@
   .hero-logo{width:auto;max-width:100%;height:84px;object-fit:contain;object-position:left;display:block}.hero p{margin:22px 0 0;color:#657088;font-size:18px}.hero-icon{width:136px;height:136px;flex-shrink:0}.hero-icon img{width:100%;height:100%}.hero>div:first-child{min-width:0}
   .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.panel{padding:26px 30px;background:#fff;border:1px solid #e8eaf0;border-radius:18px;min-width:0}.dark{background:#1f2127;border-color:#1f2127;color:#f2f4ff}
   .label{font-size:12px;letter-spacing:1px;color:#657088;margin:0 0 22px}.dark .label{color:#a3abbd}.lockup{width:auto;max-width:100%;height:52px;object-fit:contain;object-position:left;display:block}.mono{display:flex;align-items:center;gap:16px}.mono img{width:52px;height:52px}.mono .reverse{background:#1f2127;padding:12px;border-radius:12px;display:flex}
-  .font-section{margin-top:28px}.font-section h2{font-size:18px;margin:0 0 6px;font-weight:600}.font-status{font-size:13px;color:#657088;margin:0 0 18px}.font-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.font-option{background:#fff;border:1px solid #e0e4ed;border-radius:16px;padding:20px 24px;text-align:left;color:#1a1d26;min-width:0}.font-option:hover{background:#fff;border-color:#a3b0ff}.font-option[aria-pressed="true"]{background:#f0f3ff;border-color:#4f6ef7;box-shadow:0 0 0 1px #4f6ef7}.font-name{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;font-weight:600;margin-bottom:20px}.font-name em{font-style:normal;font-weight:400;color:#4f6ef7}.font-option img{display:block;width:auto;max-width:100%;height:48px;object-fit:contain;object-position:left}.font-description{display:block;margin-top:16px;font-size:12px;color:#657088}.font-number{font-weight:400;color:#657088;margin-right:6px}
+  .font-status{font-size:13px;color:#657088;margin:24px 0 18px}
   .swatches{display:flex;gap:18px;flex-wrap:wrap}.swatch i{display:block;width:40px;height:40px;border-radius:12px;background:var(--color)}.swatch span{display:block;font-size:12px;margin-top:8px;color:#657088}
   .sizes{display:flex;align-items:center;gap:26px;flex-wrap:wrap}.size{display:flex;flex-direction:column;align-items:center;gap:10px}.size span{font-size:12px;color:#657088}.size img{display:block}.motion-row{display:flex;align-items:center;gap:20px}.motion-logo{width:64px;height:64px;flex-shrink:0}.draw-tick{stroke-dasharray:44;stroke-dashoffset:0}.motion-logo.play .draw-tick{animation:draw .5s cubic-bezier(.2,.7,.2,1) both}@keyframes draw{from{stroke-dashoffset:44}to{stroke-dashoffset:0}}
   button,a.action{font:inherit;font-size:13px;background:#eef1ff;color:#3d5ae0;border:1px solid #dfe5ff;border-radius:10px;padding:10px 16px;cursor:pointer;text-decoration:none;display:inline-block}button:hover,a.action:hover{background:#dfe5ff}button:focus-visible,a:focus-visible{outline:3px solid #4f6ef7;outline-offset:4px}
   footer{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:24px;font-size:12px;color:#657088}.downloads{display:flex;gap:12px;flex-wrap:wrap}.downloads a{color:#4f6ef7}
-  @media(max-width:680px){main{padding:24px 20px}.hero{padding:28px 24px}.hero-icon{display:none}.grid,.font-grid{grid-template-columns:1fr}.hero p{font-size:16px}.hero-logo{height:64px}.panel{padding:24px}header{flex-wrap:wrap}}
+  @media(max-width:680px){main{padding:24px 20px}.hero{padding:28px 24px}.hero-icon{display:none}.grid{grid-template-columns:1fr}.hero p{font-size:16px}.hero-logo{height:64px}.panel{padding:24px}header{flex-wrap:wrap}}
   @media(prefers-reduced-motion:reduce){.motion-logo.play .draw-tick{animation:none}}
 </style>
 </head>
 <body><main>
   <header><span class="eyebrow">TICKLIST / BRAND IDENTITY</span><span class="byline">Developed by Soren</span></header>
   <section class="hero" aria-label="TickList 主品牌">
-    <div><img class="hero-logo primary-font" src="font-options/segoe-ui-light.svg" alt="TickList，Segoe UI Bold"><p>把今天，一件件做好。</p></div>
+    <div><img class="hero-logo" src="../assets/brand/logo-light.svg" alt="TickList，Segoe UI Bold"><p>把今天，一件件做好。</p></div>
     <div class="hero-icon"><img src="../assets/brand/icon.svg" alt="白色勾号，蓝紫色圆角方块"></div>
   </section>
-  <section class="font-section" aria-labelledby="fontHeading">
-    <h2 id="fontHeading">选择 TickList 字标字体</h2>
-    <p class="font-status" id="fontStatus" aria-live="polite">当前预览：Segoe UI Bold · 已选定为正式字标</p>
-    <div class="font-grid">
-      <button class="font-option" type="button" data-font="century-gothic" data-name="Century Gothic Bold" aria-pressed="false"><span class="font-name"><span><span class="font-number">01</span>Century Gothic Bold</span><em>几何现代</em></span><img src="font-options/century-gothic-light.svg" alt="TickList，Century Gothic Bold"><span class="font-description">圆形结构，简洁利落，适合清爽的工具品牌。</span></button>
-      <button class="font-option" type="button" data-font="segoe-ui" data-name="Segoe UI Bold" aria-pressed="true"><span class="font-name"><span><span class="font-number">02</span>Segoe UI Bold</span><em>已选定 · 清爽稳重</em></span><img src="font-options/segoe-ui-light.svg" alt="TickList，Segoe UI Bold"><span class="font-description">字形自然、易读，与桌面应用的气质相近。</span></button>
-      <button class="font-option" type="button" data-font="arial-rounded" data-name="Arial Rounded MT Bold" aria-pressed="false"><span class="font-name"><span><span class="font-number">03</span>Arial Rounded MT Bold</span><em>圆润亲和</em></span><img src="font-options/arial-rounded-light.svg" alt="TickList，Arial Rounded MT Bold"><span class="font-description">圆润端点呼应勾号，轻松、柔和，更有亲近感。</span></button>
-      <button class="font-option" type="button" data-font="bahnschrift" data-name="Bahnschrift Bold" aria-pressed="false"><span class="font-name"><span><span class="font-number">04</span>Bahnschrift Bold</span><em>紧凑有序</em></span><img src="font-options/bahnschrift-light.svg" alt="TickList，Bahnschrift Bold"><span class="font-description">紧凑、结实，强调效率与秩序感。</span></button>
-      <button class="font-option" type="button" data-font="trebuchet" data-name="Trebuchet MS Bold" aria-pressed="false"><span class="font-name"><span><span class="font-number">05</span>Trebuchet MS Bold</span><em>轻快活泼</em></span><img src="font-options/trebuchet-light.svg" alt="TickList，Trebuchet MS Bold"><span class="font-description">字形富有变化，适合更轻快的个人工具风格。</span></button>
-      <button class="font-option" type="button" data-font="consolas" data-name="Consolas Bold" aria-pressed="false"><span class="font-name"><span><span class="font-number">06</span>Consolas Bold</span><em>等宽技术感</em></span><img src="font-options/consolas-light.svg" alt="TickList，Consolas Bold"><span class="font-description">等宽字形，适合强调开发者与技术工具气质。</span></button>
-    </div>
-  </section>
+  <section aria-label="正式字标说明"><p class="font-status">正式字标：Segoe UI Bold · 固定路径图形，保留既有品牌比例。</p></section>
   <div class="grid">
-    <section class="panel"><p class="label">浅色背景 / PRIMARY</p><img class="lockup primary-font" src="font-options/segoe-ui-light.svg" alt="浅色背景字体预览"></section>
-    <section class="panel dark"><p class="label">深色背景 / REVERSE</p><img class="lockup reverse-font" src="font-options/segoe-ui-dark.svg" alt="深色背景字体预览"></section>
+    <section class="panel"><p class="label">浅色背景 / PRIMARY</p><img class="lockup" src="../assets/brand/logo-light.svg" alt="浅色背景字体预览"></section>
+    <section class="panel dark"><p class="label">深色背景 / REVERSE</p><img class="lockup" src="../assets/brand/logo-dark.svg" alt="深色背景字体预览"></section>
     <section class="panel"><p class="label">单色与独立符号 / MONO</p><div class="mono"><img src="../assets/brand/icon-mono-dark.svg" alt="深色单色图标"><span class="reverse"><img src="../assets/brand/icon-mono-light.svg" alt="浅色单色图标"></span><img src="../assets/brand/tick-blue.svg" alt="独立蓝色勾号"></div></section>
     <section class="panel"><p class="label">品牌色 / PALETTE</p><div class="swatches"><div class="swatch" style="--color:#4f6ef7"><i></i><span>#4F6EF7</span></div><div class="swatch" style="--color:#8473f5"><i></i><span>#8473F5</span></div><div class="swatch" style="--color:#1a1d26"><i></i><span>#1A1D26</span></div><div class="swatch" style="--color:#22a06b"><i></i><span>完成反馈</span></div></div></section>
     <section class="panel"><p class="label">实际尺寸 / SMALL SIZES</p><div class="sizes"><div class="size"><img src="../assets/brand/favicon.svg" width="16" height="16" alt="16 像素图标"><span>16 px</span></div><div class="size"><img src="../assets/brand/icon-solid.svg" width="24" height="24" alt="24 像素图标"><span>24 px</span></div><div class="size"><img src="../assets/brand/icon.svg" width="32" height="32" alt="32 像素图标"><span>32 px</span></div><div class="size"><img src="../assets/brand/icon.svg" width="48" height="48" alt="48 像素图标"><span>48 px</span></div></div></section>
     <section class="panel"><p class="label">勾号绘制 / MOTION</p><div class="motion-row"><svg class="motion-logo" id="motionLogo" viewBox="0 0 64 64" role="img" aria-label="TickList 勾号绘制动画"><rect width="64" height="64" rx="18" fill="#4f6ef7"/><path class="draw-tick" d="m18 33 10 10 19-21" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg><button type="button" id="playMotion">播放绘制动画</button></div></section>
   </div>
-  <footer><span>TickList · 打开即用的本地待办清单</span><div class="downloads"><a href="../assets/brand/icon.svg" download>图标 SVG</a><a id="fontDownload" href="../assets/brand/logo-light.svg" download>预览字标 SVG</a><a href="../assets/brand/icon-512.png" download>图标 PNG</a><a href="../index.html" class="action">打开清单</a></div></footer>
+  <footer><span>TickList · 打开即用的本地待办清单</span><div class="downloads"><a href="../assets/brand/icon.svg" download>图标 SVG</a><a href="../assets/brand/logo-light.svg" download>正式字标 SVG</a><a href="../assets/brand/icon-512.png" download>图标 PNG</a><a href="../index.html" class="action">打开清单</a></div></footer>
 </main>
 <script>
-  const fontOptions = Array.from(document.querySelectorAll('.font-option'));
-  function selectFont(option) {
-    const base = 'font-options/' + option.dataset.font;
-    document.querySelectorAll('.primary-font').forEach(image => { image.src = base + '-light.svg'; image.alt = 'TickList，' + option.dataset.name + ' 字体预览'; });
-    document.querySelectorAll('.reverse-font').forEach(image => { image.src = base + '-dark.svg'; image.alt = 'TickList，' + option.dataset.name + ' 深色字体预览'; });
-    fontOptions.forEach(button => button.setAttribute('aria-pressed', String(button === option)));
-    document.getElementById('fontStatus').textContent = '当前预览：' + option.dataset.name + (option.dataset.font === 'segoe-ui' ? ' · 已选定为正式字标' : ' · 仅预览，正式字体为 Segoe UI Bold');
-    document.getElementById('fontDownload').href = option.dataset.font === 'segoe-ui' ? '../assets/brand/logo-light.svg' : base + '-light.svg';
-  }
-  fontOptions.forEach(option => option.addEventListener('click', () => selectFont(option)));
   const motionLogo = document.getElementById('motionLogo');
   document.getElementById('playMotion').addEventListener('click', () => {
     motionLogo.classList.remove('play');
