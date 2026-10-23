@@ -28,8 +28,7 @@ TickList-????-??-??*.md
 /docs/release/upload-allowlist.txt
 /docs/release/upload-scope-audit.json
 
-# Additional video covers: source in Git, media in Release
-/marketing/video/covers/*/public/
+# Final cover images and source belong in Git; previews and local archives are excluded
 /marketing/video/covers/*/qa/
 /marketing/video/covers/*/backup/
 /marketing/video/covers/*/*.zip
