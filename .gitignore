@@ -27,3 +27,10 @@ TickList-????-??-??*.md
 /marketing/video/production/public/audio/*.wav
 /docs/release/upload-allowlist.txt
 /docs/release/upload-scope-audit.json
+
+# Additional video covers: source in Git, media in Release
+/marketing/video/covers/*/public/
+/marketing/video/covers/*/qa/
+/marketing/video/covers/*/backup/
+/marketing/video/covers/*/*.zip
+/marketing/video/covers/*/backup-verification.json

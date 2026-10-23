@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-23",
+  "status": "approved_for_publication",
+  "scope": "Two additional cover aspect ratios, user-authorized GitHub publication. Approved MP4 and original 16:9 cover remain unchanged.",
+  "brand_logo_source": "assets/brand/logo-light.svg",
+  "brand_logo_sha256": "cf02addd282c6ffb093fccc643ff05e8476168ee8275b28ff57ea408501c200b",
+  "slogan": "把今天，一件件做好。",
+  "credit": "Developed by Soren",
+  "design": {
+    "background": "Same white/light-gray/blue-purple gradient language as SharedGradient.tsx; recomposed for each aspect ratio.",
+    "landscape": "One-line centered slogan with official logo and secondary credit.",
+    "portrait": "Centered logo, two-line slogan, elevated optical center; keep top/bottom breathing room.",
+    "text": "Outlined glyphs, no external font dependency in SVG. Fonts not bundled."
+  },
+  "layouts": [
+    {
+      "aspect_ratio": "4:3",
+      "width": 1600,
+      "height": 1200,
+      "stem": "TickList-Promo-Cover-4x3-1600x1200",
+      "source": "source/TickList-Promo-Cover-4x3-1600x1200.svg",
+      "elements": [
+        {
+          "name": "Official logo",
+          "bounds": [
+            600.0,
+            405,
+            400,
+            92.0863309352518
+          ]
+        },
+        {
+          "name": "把今天，一件件做好。",
+          "bounds": [
+            395.14648437499994,
+            570,
+            809.7070312500001,
+            83.732421875
+          ]
+        },
+        {
+          "name": "Developed by Soren",
+          "bounds": [
+            650.984375,
+            754,
+            298.03125,
+            33.169921875
+          ]
+        }
+      ]
+    },
+    {
+      "aspect_ratio": "9:16",
+      "width": 1080,
+      "height": 1920,
+      "stem": "TickList-Promo-Cover-9x16-1080x1920",
+      "source": "source/TickList-Promo-Cover-9x16-1080x1920.svg",
+      "elements": [
+        {
+          "name": "Official logo",
+          "bounds": [
+            345.0,
+            595,
+            390,
+            89.7841726618705
+          ]
+        },
+        {
+          "name": "把今天，",
+          "bounds": [
+            367.05078125,
+            810,
+            345.8984375,
+            100.6484375
+          ]
+        },
+        {
+          "name": "一件件做好。",
+          "bounds": [
+            242.2890625,
+            950,
+            595.421875,
+            108.828125
+          ]
+        },
+        {
+          "name": "Developed by Soren",
+          "bounds": [
+            390.984375,
+            1212,
+            298.03125,
+            33.169921875
+          ]
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "file": "public/TickList-Promo-Cover-4x3-1600x1200.png",
+      "width": 1600,
+      "height": 1200,
+      "format": "png",
+      "bytes": 233746,
+      "sha256": "4ee7fd865341ef57592c8df14b9278fa674cc5a70cf1b37d9f1e9a37abb85900"
+    },
+    {
+      "file": "public/TickList-Promo-Cover-4x3-1600x1200.jpg",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "bytes": 134963,
+      "sha256": "6a4dc26005adc186b1e0829b2ce4d98733f6779b86b423a005d9605a96aa7518"
+    },
+    {
+      "file": "public/TickList-Promo-Cover-9x16-1080x1920.png",
+      "width": 1080,
+      "height": 1920,
+      "format": "png",
+      "bytes": 273883,
+      "sha256": "b4b9c768acbda8752614ea8659c4351fc42f842325a032ca5c9251afaec4e42a"
+    },
+    {
+      "file": "public/TickList-Promo-Cover-9x16-1080x1920.jpg",
+      "width": 1080,
+      "height": 1920,
+      "format": "jpg",
+      "bytes": 150431,
+      "sha256": "6ece756d3f15affa666ad3ce443c418d6e539f20ef2e537d502ce318ffbfbf86"
+    }
+  ],
+  "protected_approved_files": {
+    "marketing/video/release/2026-10-19/public/TickList-Promo-35s-1080p60.mp4": "207755f45c56c661b968fcb6537f8963e580750b1824303c01f0a4d0f890d8c4",
+    "marketing/video/release/2026-10-19/public/TickList-Promo-Cover-1920x1080.jpg": "c1ad31e740bf0f425f625dc02b51ca07d4fed209eb29a25387ac3489f90083f7"
+  },
+  "protected_files_unchanged": true,
+  "technical_checks": {
+    "exact_dimensions": true,
+    "rgb_images_decoded": true,
+    "content_inside_8_percent_horizontal_safe_margin": true
+  },
+  "visual_review": {
+    "reviewed": true,
+    "reviewer": "assistant",
+    "checks": [
+      "Official checkmark logo and TickList wordmark visible in both JPEGs.",
+      "Chinese slogan and Soren credit legible with no missing glyphs.",
+      "Landscape single line and portrait two-line arrangement individually viewed.",
+      "No content clipping or unintended panels; spacious shared blue-purple gradient."
+    ],
+    "user_approval": "User authorized publishing these covers to GitHub on 2026-10-23."
+  },
+  "publication_authorization": {
+    "date": "2026-10-23",
+    "source": "direct user message in this chat",
+    "evidence": "更新到github"
+  }
+}

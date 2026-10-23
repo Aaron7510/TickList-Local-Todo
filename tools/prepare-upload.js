@@ -32,6 +32,7 @@ const allow = file => [
   /^marketing\/video\/制作过程\.md$/,
   /^docs\/(?:release\/上传范围说明|maintenance\/视频废案清理报告)\.md$/,
   /^marketing\/video\/(?:README|定版登记|品牌IP与宣传视频策划|原创配乐制作记录-2026-10-18|交互音效优化记录-2026-10-18)\.md$/,
+  /^marketing\/video\/covers\/2026-10-23\/(?:README\.md|制作记录\.md|cover-manifest\.json|github-publication\.json|SHA256SUMS\.txt|TickList-Covers-4x3-9x16-SHA256SUMS\.txt|source\/[^/]+\.(?:svg|py|cjs))$/,
   /^marketing\/video\/production\/(?:src\/|scripts\/)/,
   /^marketing\/video\/production\/public\/brand\//,
   /^marketing\/video\/production\/media\/.*\.(?:json|md|png)$/i,
