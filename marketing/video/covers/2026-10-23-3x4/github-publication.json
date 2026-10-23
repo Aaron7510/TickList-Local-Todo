@@ -1,0 +1,53 @@
+{
+  "status": "published_and_download_verified",
+  "date": "2026-10-23",
+  "authorization": "再生成一个3：4的封面，并且同步到GitHub",
+  "repository": "Aaron7510/TickList-Local-Todo",
+  "release_url": "https://github.com/Aaron7510/TickList-Local-Todo/releases/tag/v0.1.0",
+  "release_id": 406984592,
+  "tag": "v0.1.0",
+  "assets": [
+    {
+      "name": "TickList-Promo-Cover-3x4-1200x1600.png",
+      "asset_id": 668592130,
+      "bytes": 254986,
+      "sha256": "95c866fe547760b4af78c473f0e2ace0b5f64c6d5c2d7017665393539bdddf92",
+      "server_digest": "sha256:95c866fe547760b4af78c473f0e2ace0b5f64c6d5c2d7017665393539bdddf92",
+      "download_url": "https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-3x4-1200x1600.png",
+      "actual_public_download_verified": true
+    },
+    {
+      "name": "TickList-Promo-Cover-3x4-1200x1600.jpg",
+      "asset_id": 668592179,
+      "bytes": 145796,
+      "sha256": "6e5ca43a9aff82805a0aaab1b7cd32b93cb45532cffeccefddbb2b2f8c8f9287",
+      "server_digest": "sha256:6e5ca43a9aff82805a0aaab1b7cd32b93cb45532cffeccefddbb2b2f8c8f9287",
+      "download_url": "https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-3x4-1200x1600.jpg",
+      "actual_public_download_verified": true
+    },
+    {
+      "name": "TickList-Cover-3x4-2026-10-23.zip",
+      "asset_id": 668592219,
+      "bytes": 399154,
+      "sha256": "f3e187e0801a3394029c43eb48ae675cf5aec89bb1d01815a30fb5993cfb35b7",
+      "server_digest": "sha256:f3e187e0801a3394029c43eb48ae675cf5aec89bb1d01815a30fb5993cfb35b7",
+      "download_url": "https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Cover-3x4-2026-10-23.zip",
+      "actual_public_download_verified": true
+    },
+    {
+      "name": "TickList-Covers-3x4-SHA256SUMS.txt",
+      "asset_id": 668592265,
+      "bytes": 313,
+      "sha256": "ceafcd1ab907e88735f2f1f7635bb325bfbbf3382e2c7953cdbd20e4a120de0a",
+      "server_digest": "sha256:ceafcd1ab907e88735f2f1f7635bb325bfbbf3382e2c7953cdbd20e4a120de0a",
+      "download_url": "https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Covers-3x4-SHA256SUMS.txt",
+      "actual_public_download_verified": true
+    }
+  ],
+  "previous_asset_count": 11,
+  "previous_release_assets_unchanged": true,
+  "protected_media_unchanged": true,
+  "release_body_updated": true,
+  "source_branch": "main",
+  "source_commit": "See Git history for the commit containing this record."
+}

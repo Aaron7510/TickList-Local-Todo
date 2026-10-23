@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-23",
+  "status": "authorized_for_github_publication",
+  "authorization": "再生成一个3：4的封面，并且同步到GitHub",
+  "scope": "Additional 3:4 cover only; previous movie and cover media preserved.",
+  "brand_logo_source": "assets/brand/logo-light.svg",
+  "brand_logo_sha256": "cf02addd282c6ffb093fccc643ff05e8476168ee8275b28ff57ea408501c200b",
+  "slogan": "把今天，一件件做好。",
+  "credit": "Developed by Soren",
+  "design": {
+    "background": "Same white/light-gray/blue-purple gradient family as existing covers.",
+    "layout": "Recomposed centered logo, two-line slogan and credit for 1200x1600.",
+    "text": "Outlined glyphs; no font files bundled."
+  },
+  "layouts": [
+    {
+      "aspect_ratio": "3:4",
+      "width": 1200,
+      "height": 1600,
+      "stem": "TickList-Promo-Cover-3x4-1200x1600",
+      "source": "source/TickList-Promo-Cover-3x4-1200x1600.svg",
+      "elements": [
+        {
+          "name": "Official logo",
+          "bounds": [
+            390.0,
+            435,
+            420,
+            96.69064748201438
+          ]
+        },
+        {
+          "name": "把今天，",
+          "bounds": [
+            410.4931640625,
+            652,
+            379.01367187499994,
+            110.326171875
+          ]
+        },
+        {
+          "name": "一件件做好。",
+          "bounds": [
+            275.81933593750006,
+            804,
+            648.3613281249999,
+            118.544921875
+          ]
+        },
+        {
+          "name": "Developed by Soren",
+          "bounds": [
+            450.984375,
+            1044,
+            298.03125,
+            33.169921875
+          ]
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "file": "public/TickList-Promo-Cover-3x4-1200x1600.png",
+      "width": 1200,
+      "height": 1600,
+      "format": "png",
+      "bytes": 254986,
+      "sha256": "95c866fe547760b4af78c473f0e2ace0b5f64c6d5c2d7017665393539bdddf92"
+    },
+    {
+      "file": "public/TickList-Promo-Cover-3x4-1200x1600.jpg",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "bytes": 145796,
+      "sha256": "6e5ca43a9aff82805a0aaab1b7cd32b93cb45532cffeccefddbb2b2f8c8f9287"
+    }
+  ],
+  "protected_approved_files": {
+    "marketing/video/release/2026-10-19/public/TickList-Promo-35s-1080p60.mp4": "207755f45c56c661b968fcb6537f8963e580750b1824303c01f0a4d0f890d8c4",
+    "marketing/video/release/2026-10-19/public/TickList-Promo-Cover-1920x1080.jpg": "c1ad31e740bf0f425f625dc02b51ca07d4fed209eb29a25387ac3489f90083f7",
+    "marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-4x3-1600x1200.jpg": "6a4dc26005adc186b1e0829b2ce4d98733f6779b86b423a005d9605a96aa7518",
+    "marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-4x3-1600x1200.png": "4ee7fd865341ef57592c8df14b9278fa674cc5a70cf1b37d9f1e9a37abb85900",
+    "marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-9x16-1080x1920.jpg": "6ece756d3f15affa666ad3ce443c418d6e539f20ef2e537d502ce318ffbfbf86",
+    "marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-9x16-1080x1920.png": "b4b9c768acbda8752614ea8659c4351fc42f842325a032ca5c9251afaec4e42a"
+  },
+  "protected_files_unchanged": true,
+  "technical_checks": {
+    "exact_dimensions": true,
+    "rgb_images_decoded": true,
+    "content_inside_8_percent_horizontal_safe_margin": true
+  },
+  "visual_review": {
+    "reviewed": true,
+    "checks": [
+      "Official logo visible and intact",
+      "Slogan and credit readable without clipping",
+      "3:4 composition viewed at full image size"
+    ],
+    "publication_authorized_by_user": true
+  }
+}

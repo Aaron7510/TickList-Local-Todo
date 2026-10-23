@@ -34,6 +34,19 @@
 
 六份附件均从正式公开地址实际下载，大小与 SHA-256 和本地文件及 GitHub digest 一致。Release 正文已补充新封面入口；设计源文件及记录同步到 main。详见 [封面设计与源文件](../../marketing/video/covers/2026-10-23/README.md) 和 [本次上传核验](../../marketing/video/covers/2026-10-23/github-publication.json)。
 
+## 3:4 封面补充（2026-10-23）
+
+用户授权新增并同步 3:4 封面。1200×1600 JPG、PNG、源文件包及独立校验文件已加入既有 v0.1.0 Release，四份均完成公开实际下载、大小与 SHA-256 核对。此前 11 份附件的 ID、大小与摘要保持。
+
+| 新文件 | 字节数 | 下载 |
+| --- | ---: | --- |
+| TickList-Promo-Cover-3x4-1200x1600.png | 254986 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-3x4-1200x1600.png) |
+| TickList-Promo-Cover-3x4-1200x1600.jpg | 145796 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-3x4-1200x1600.jpg) |
+| TickList-Cover-3x4-2026-10-23.zip | 399154 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Cover-3x4-2026-10-23.zip) |
+| TickList-Covers-3x4-SHA256SUMS.txt | 313 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Covers-3x4-SHA256SUMS.txt) |
+
+[3:4 设计源文件与说明](../../marketing/video/covers/2026-10-23-3x4/README.md) · [上传与下载核验](../../marketing/video/covers/2026-10-23-3x4/github-publication.json)。视觉检查包括 Logo、双行标语、署名与留白；源文件、渲染脚本和摘要单独进入 main。
+
 ## 实际复验
 
 五份附件的实际大小与 SHA-256 均符合已批准本地原件和服务器记录；两份下载的校验文本也逐项核对。ZIP CRC、38 个解压文件及 35 项摘要通过；两页入口、本地引用与独立 HTTP 文件访问通过。宣传片实际容器为 35 秒视频轨、2100 帧、1080p60、AAC 双声道 48kHz；JPEG 完整解码与封面目视检查通过。
