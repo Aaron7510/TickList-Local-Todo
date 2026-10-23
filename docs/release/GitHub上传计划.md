@@ -19,33 +19,19 @@
 | TickList-v0.1.0.zip | 157487 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-v0.1.0.zip) |
 | TickList-v0.1.0.zip.sha256 | 86 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-v0.1.0.zip.sha256) |
 
-## 新增多比例封面（2026-10-23）
+## 新增封面素材分发（2026-10-23，最终要求）
 
-按用户“更新到github”的授权，为既有 v0.1.0 正式 Release 新增四张 JPG / PNG、完整封面包与独立校验文件，共六份附件。原有五份附件的 ID、大小与 SHA-256 保持；没有替换视频、16:9 封面、应用包或原校验文件。
+用户明确要求新增素材只进入仓库。4:3、9:16、3:4 的六张 JPG / PNG 已加入 main 分支对应 public/ 目录，并从 GitHub 返回的实际文件内容核对大小、SHA-256 与 Git blob 摘要。
 
-| 新文件 | 字节数 | 下载 |
-| --- | ---: | --- |
-| TickList-Promo-Cover-4x3-1600x1200.png | 233746 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-4x3-1600x1200.png) |
-| TickList-Promo-Cover-4x3-1600x1200.jpg | 134963 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-4x3-1600x1200.jpg) |
-| TickList-Promo-Cover-9x16-1080x1920.png | 273883 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-9x16-1080x1920.png) |
-| TickList-Promo-Cover-9x16-1080x1920.jpg | 150431 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-9x16-1080x1920.jpg) |
-| TickList-Covers-4x3-9x16-2026-10-23.zip | 784534 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Covers-4x3-9x16-2026-10-23.zip) |
-| TickList-Covers-4x3-9x16-SHA256SUMS.txt | 533 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Covers-4x3-9x16-SHA256SUMS.txt) |
+| 比例 | JPG | PNG |
+| --- | --- | --- |
+| 4:3 | [仓库 JPG](../../marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-4x3-1600x1200.jpg) | [仓库 PNG](../../marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-4x3-1600x1200.png) |
+| 9:16 | [仓库 JPG](../../marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-9x16-1080x1920.jpg) | [仓库 PNG](../../marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-9x16-1080x1920.png) |
+| 3:4 | [仓库 JPG](../../marketing/video/covers/2026-10-23-3x4/public/TickList-Promo-Cover-3x4-1200x1600.jpg) | [仓库 PNG](../../marketing/video/covers/2026-10-23-3x4/public/TickList-Promo-Cover-3x4-1200x1600.png) |
 
-六份附件均从正式公开地址实际下载，大小与 SHA-256 和本地文件及 GitHub digest 一致。Release 正文已补充新封面入口；设计源文件及记录同步到 main。详见 [封面设计与源文件](../../marketing/video/covers/2026-10-23/README.md) 和 [本次上传核验](../../marketing/video/covers/2026-10-23/github-publication.json)。
+此前新增的六个封面图片附件、两个封面包及两个配套校验文件，共十份，已从 Release 撤下；原有五个附件的 ID、大小和摘要均保持。Release 正文与新增封面之前的快照逐字一致，原发布名称、标签和发布时间保留。
 
-## 3:4 封面补充（2026-10-23）
-
-用户授权新增并同步 3:4 封面。1200×1600 JPG、PNG、源文件包及独立校验文件已加入既有 v0.1.0 Release，四份均完成公开实际下载、大小与 SHA-256 核对。此前 11 份附件的 ID、大小与摘要保持。
-
-| 新文件 | 字节数 | 下载 |
-| --- | ---: | --- |
-| TickList-Promo-Cover-3x4-1200x1600.png | 254986 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-3x4-1200x1600.png) |
-| TickList-Promo-Cover-3x4-1200x1600.jpg | 145796 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-3x4-1200x1600.jpg) |
-| TickList-Cover-3x4-2026-10-23.zip | 399154 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Cover-3x4-2026-10-23.zip) |
-| TickList-Covers-3x4-SHA256SUMS.txt | 313 | [正式附件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Covers-3x4-SHA256SUMS.txt) |
-
-[3:4 设计源文件与说明](../../marketing/video/covers/2026-10-23-3x4/README.md) · [上传与下载核验](../../marketing/video/covers/2026-10-23-3x4/github-publication.json)。视觉检查包括 Logo、双行标语、署名与留白；源文件、渲染脚本和摘要单独进入 main。
+[4:3 / 9:16 同步核验](../../marketing/video/covers/2026-10-23/github-publication.json) · [3:4 同步核验](../../marketing/video/covers/2026-10-23-3x4/github-publication.json)。撤下文件、先前发布记录与修改前文档已在本地备份；不重做视频或重新混音。
 
 ## 实际复验
 

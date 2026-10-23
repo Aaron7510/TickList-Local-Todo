@@ -1,6 +1,6 @@
 {
   "date": "2026-10-23",
-  "status": "approved_for_publication",
+  "status": "repository_only",
   "scope": "Two additional cover aspect ratios, user-authorized GitHub publication. Approved MP4 and original 16:9 cover remain unchanged.",
   "brand_logo_source": "assets/brand/logo-light.svg",
   "brand_logo_sha256": "cf02addd282c6ffb093fccc643ff05e8476168ee8275b28ff57ea408501c200b",
@@ -154,5 +154,12 @@
     "date": "2026-10-23",
     "source": "direct user message in this chat",
     "evidence": "更新到github"
+  },
+  "distribution": {
+    "mode": "repository_only",
+    "authorization": "不要将图片封面素材放入只releases中，将releases中的图片素材删除，保持原本的内容，素材只同步进仓库即可",
+    "release_cover_assets_removed": true,
+    "images_stored_under": "public/",
+    "details": "github-publication.json"
   }
 }

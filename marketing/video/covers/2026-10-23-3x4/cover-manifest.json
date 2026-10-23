@@ -1,6 +1,6 @@
 {
   "date": "2026-10-23",
-  "status": "authorized_for_github_publication",
+  "status": "repository_only",
   "authorization": "再生成一个3：4的封面，并且同步到GitHub",
   "scope": "Additional 3:4 cover only; previous movie and cover media preserved.",
   "brand_logo_source": "assets/brand/logo-light.svg",
@@ -99,5 +99,12 @@
       "3:4 composition viewed at full image size"
     ],
     "publication_authorized_by_user": true
+  },
+  "distribution": {
+    "mode": "repository_only",
+    "authorization": "不要将图片封面素材放入只releases中，将releases中的图片素材删除，保持原本的内容，素材只同步进仓库即可",
+    "release_cover_assets_removed": true,
+    "images_stored_under": "public/",
+    "details": "github-publication.json"
   }
 }

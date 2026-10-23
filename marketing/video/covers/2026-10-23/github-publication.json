@@ -1,74 +1,88 @@
 {
-  "status": "published_and_download_verified",
+  "status": "repository_only",
   "date": "2026-10-23",
-  "authorization": {
-    "source": "direct user message",
-    "evidence": "更新到github"
-  },
+  "authorization": "不要将图片封面素材放入只releases中，将releases中的图片素材删除，保持原本的内容，素材只同步进仓库即可",
   "repository": "Aaron7510/TickList-Local-Todo",
-  "release_url": "https://github.com/Aaron7510/TickList-Local-Todo/releases/tag/v0.1.0",
-  "release_id": 406984592,
-  "tag": "v0.1.0",
-  "assets": [
+  "repository_directory": "https://github.com/Aaron7510/TickList-Local-Todo/tree/main/marketing/video/covers/2026-10-23/public",
+  "image_commit": "97fa5ff803c820c4f384fdb3df121596fab15f57",
+  "images": [
     {
-      "name": "TickList-Promo-Cover-4x3-1600x1200.png",
-      "asset_id": 668568685,
+      "path": "marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-4x3-1600x1200.png",
       "bytes": 233746,
       "sha256": "4ee7fd865341ef57592c8df14b9278fa674cc5a70cf1b37d9f1e9a37abb85900",
-      "server_digest": "sha256:4ee7fd865341ef57592c8df14b9278fa674cc5a70cf1b37d9f1e9a37abb85900",
-      "download_url": "https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-4x3-1600x1200.png",
-      "actual_public_download_verified": true
+      "git_blob_sha": "376a0c75863feda57ae5c238b2eddf201ed4ebf6",
+      "repository_url": "https://github.com/Aaron7510/TickList-Local-Todo/blob/97fa5ff803c820c4f384fdb3df121596fab15f57/marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-4x3-1600x1200.png",
+      "repository_bytes_verified": true
     },
     {
-      "name": "TickList-Promo-Cover-4x3-1600x1200.jpg",
-      "asset_id": 668568736,
+      "path": "marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-4x3-1600x1200.jpg",
       "bytes": 134963,
       "sha256": "6a4dc26005adc186b1e0829b2ce4d98733f6779b86b423a005d9605a96aa7518",
-      "server_digest": "sha256:6a4dc26005adc186b1e0829b2ce4d98733f6779b86b423a005d9605a96aa7518",
-      "download_url": "https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-4x3-1600x1200.jpg",
-      "actual_public_download_verified": true
+      "git_blob_sha": "f83d37a6b5c8b66ac2df5988a8c0070109c6d179",
+      "repository_url": "https://github.com/Aaron7510/TickList-Local-Todo/blob/97fa5ff803c820c4f384fdb3df121596fab15f57/marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-4x3-1600x1200.jpg",
+      "repository_bytes_verified": true
     },
     {
-      "name": "TickList-Promo-Cover-9x16-1080x1920.png",
-      "asset_id": 668568817,
+      "path": "marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-9x16-1080x1920.png",
       "bytes": 273883,
       "sha256": "b4b9c768acbda8752614ea8659c4351fc42f842325a032ca5c9251afaec4e42a",
-      "server_digest": "sha256:b4b9c768acbda8752614ea8659c4351fc42f842325a032ca5c9251afaec4e42a",
-      "download_url": "https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-9x16-1080x1920.png",
-      "actual_public_download_verified": true
+      "git_blob_sha": "159ce94cee6265602e9da567a4095228b9870f3e",
+      "repository_url": "https://github.com/Aaron7510/TickList-Local-Todo/blob/97fa5ff803c820c4f384fdb3df121596fab15f57/marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-9x16-1080x1920.png",
+      "repository_bytes_verified": true
     },
     {
-      "name": "TickList-Promo-Cover-9x16-1080x1920.jpg",
-      "asset_id": 668568885,
+      "path": "marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-9x16-1080x1920.jpg",
       "bytes": 150431,
       "sha256": "6ece756d3f15affa666ad3ce443c418d6e539f20ef2e537d502ce318ffbfbf86",
-      "server_digest": "sha256:6ece756d3f15affa666ad3ce443c418d6e539f20ef2e537d502ce318ffbfbf86",
-      "download_url": "https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-9x16-1080x1920.jpg",
-      "actual_public_download_verified": true
-    },
-    {
-      "name": "TickList-Covers-4x3-9x16-2026-10-23.zip",
-      "asset_id": 668568924,
-      "bytes": 784534,
-      "sha256": "89a0ff18274ddf15939c41d341091c6e2d1791aee72685812a0916257047c5ba",
-      "server_digest": "sha256:89a0ff18274ddf15939c41d341091c6e2d1791aee72685812a0916257047c5ba",
-      "download_url": "https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Covers-4x3-9x16-2026-10-23.zip",
-      "actual_public_download_verified": true
-    },
-    {
-      "name": "TickList-Covers-4x3-9x16-SHA256SUMS.txt",
-      "asset_id": 668569001,
-      "bytes": 533,
-      "sha256": "ee9a12f5a126da905feee7efa5a29fbf2cfef76520ec92304f39e5ea43011c16",
-      "server_digest": "sha256:ee9a12f5a126da905feee7efa5a29fbf2cfef76520ec92304f39e5ea43011c16",
-      "download_url": "https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Covers-4x3-9x16-SHA256SUMS.txt",
-      "actual_public_download_verified": true
+      "git_blob_sha": "e5a965652ea4d6e3a8af99387201bfde34c065f3",
+      "repository_url": "https://github.com/Aaron7510/TickList-Local-Todo/blob/97fa5ff803c820c4f384fdb3df121596fab15f57/marketing/video/covers/2026-10-23/public/TickList-Promo-Cover-9x16-1080x1920.jpg",
+      "repository_bytes_verified": true
     }
   ],
-  "original_five_assets_unchanged": true,
-  "release_body_cover_section_added": true,
-  "local_approved_video_and_16_9_cover_unchanged": true,
-  "source_branch": "main",
-  "source_commit": "recorded separately in Git history after this file is committed",
-  "scope": "Additional cover media only; original app package, movie, 16:9 cover and existing checksums preserved."
+  "release_migration": {
+    "new_cover_assets_removed": [
+      {
+        "name": "TickList-Promo-Cover-4x3-1600x1200.png",
+        "id": 668568685,
+        "sha256": "4ee7fd865341ef57592c8df14b9278fa674cc5a70cf1b37d9f1e9a37abb85900",
+        "local_backup_verified": true
+      },
+      {
+        "name": "TickList-Promo-Cover-4x3-1600x1200.jpg",
+        "id": 668568736,
+        "sha256": "6a4dc26005adc186b1e0829b2ce4d98733f6779b86b423a005d9605a96aa7518",
+        "local_backup_verified": true
+      },
+      {
+        "name": "TickList-Promo-Cover-9x16-1080x1920.png",
+        "id": 668568817,
+        "sha256": "b4b9c768acbda8752614ea8659c4351fc42f842325a032ca5c9251afaec4e42a",
+        "local_backup_verified": true
+      },
+      {
+        "name": "TickList-Promo-Cover-9x16-1080x1920.jpg",
+        "id": 668568885,
+        "sha256": "6ece756d3f15affa666ad3ce443c418d6e539f20ef2e537d502ce318ffbfbf86",
+        "local_backup_verified": true
+      },
+      {
+        "name": "TickList-Covers-4x3-9x16-2026-10-23.zip",
+        "id": 668568924,
+        "sha256": "89a0ff18274ddf15939c41d341091c6e2d1791aee72685812a0916257047c5ba",
+        "local_backup_verified": true
+      },
+      {
+        "name": "TickList-Covers-4x3-9x16-SHA256SUMS.txt",
+        "id": 668569001,
+        "sha256": "ee9a12f5a126da905feee7efa5a29fbf2cfef76520ec92304f39e5ea43011c16",
+        "local_backup_verified": true
+      }
+    ],
+    "original_asset_count": 5,
+    "original_assets_preserved": true,
+    "original_release_body_restored_exactly": true,
+    "original_release_body_sha256": "5b3136aa7332f1f03dd5038c17c02dc296c5e5be208b7e821bebc6ecdbc4f94c"
+  },
+  "backup": "Previous distribution records and all withdrawn files are retained in verified local backups.",
+  "source_commit": "See Git history for the commit containing this record."
 }
