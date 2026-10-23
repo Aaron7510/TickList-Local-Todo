@@ -26,13 +26,14 @@ TickList 是面向电脑端的轻量待办网页：无需注册，任务保存�
 
 展示图按现有页面样式绘制为原生 SVG，文字与图形均为矢量，放大不会产生截图像素模糊。图中只使用公开示例任务；这是静态界面展示，实际浏览器验收截图保留在 `docs/screenshots/`。
 
-## 下载与宣传视频
+## 源码与版本下载
 
-应用与宣传附件已上传至[现有私有草稿](https://github.com/Aaron7510/TickList-Local-Todo/releases/tag/untagged-120f1e02c48e498c9327)，2026-10-21 已核对五份附件的大小及 SHA-256，均与本地一致。仓库仍为私有，正式 Release 尚未发布；以下链接需要仓库访问权限。
+源码仓库已于 2026-10-23 公开，可直接浏览或通过 GitHub 的 Code → Download ZIP 下载源码；完整解压后使用两个 HTML 和 assets/ 即可。
 
-- [打开 35 秒宣传片 MP4](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-35s-1080p60.mp4) · [查看横版封面](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-Cover-1920x1080.jpg) · [媒体 SHA-256 校验文件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-SHA256SUMS.txt)。
-- [下载应用离线 ZIP](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-v0.1.0.zip) · [应用 ZIP 校验文件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-v0.1.0.zip.sha256)。
-- 文件规格、批准和来源见[视频定版登记](marketing/video/定版登记.md)。Landing 与清单页的原生 SVG 展示保持。
+v0.1.0 正式 Release 尚未发布。应用离线 ZIP、35 秒宣传片、封面及校验文件已准备在维护者草稿中，普通访客目前无法下载这些附件；正式发布后将在这里补充下载入口。
+
+- [查看版本发布页面](https://github.com/Aaron7510/TickList-Local-Todo/releases)
+- [阅读宣传视频制作过程](marketing/video/制作过程.md) · [查看最终视频规格与摘要](marketing/video/定版登记.md)
 
 ## 使用
 
@@ -92,4 +93,4 @@ npm run serve
 - [品牌规范](brand/README.md) · [正式品牌预览](brand/preview.html)
 - [宣传视频制作过程](marketing/video/制作过程.md) · [视频编辑工程](marketing/video/production/README.md)
 
-当前仓库与 Release 仍为私有/草稿。应用标签基准为 9896044；公开状态以发布记录及 GitHub 实际状态为准。
+源码仓库已公开，v0.1.0 Release 仍为草稿。应用标签基准为 9896044；当前状态见发布记录。

@@ -1,8 +1,6 @@
 # TickList 已定版媒体（2026-10-19）
 
-> 附件状态（2026-10-21）：用户已将视频、封面和媒体校验文件上传至[现有私有草稿](https://github.com/Aaron7510/TickList-Local-Todo/releases/tag/untagged-120f1e02c48e498c9327)。已核对服务器端文件名、大小和 SHA-256，与本地定版一致。附件访问需要仓库权限，正式 Release 尚未发布；媒体不随源码提交。
->
-> [打开宣传片 MP4](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-35s-1080p60.mp4) · [查看封面](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-Cover-1920x1080.jpg) · [媒体校验文件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/untagged-120f1e02c48e498c9327/TickList-Promo-SHA256SUMS.txt)
+> 发布状态（2026-10-23）：源码仓库与视频制作过程已公开。成片、封面及媒体校验文件已准备在维护者草稿中，v0.1.0 Release 尚未发布，普通访客暂不能下载附件；后续从[版本发布页面](https://github.com/Aaron7510/TickList-Local-Todo/releases)获取正式文件。2026-10-21 的服务器大小与摘要核对结果仍作为历史记录，不代表正式附件下载验收。
 
 批准日期、确认内容与用户原文见 [定版登记](../../定版登记.md)。本目录保持两份公开媒体及原始 JSON、摘要、验收记录；此次不重制或覆盖成片。
 

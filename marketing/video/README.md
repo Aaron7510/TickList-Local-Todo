@@ -8,4 +8,4 @@
 - [配乐记录](原创配乐制作记录-2026-10-18.md) · [音效记录](交互音效优化记录-2026-10-18.md)
 - [来源与许可](production/media/recordings/CREDITS.md) · [工程权利范围](production/RIGHTS.md)
 
-视频、封面及媒体校验文件已上传[现有私有草稿](https://github.com/Aaron7510/TickList-Local-Todo/releases/tag/untagged-120f1e02c48e498c9327)，尚未正式发布。Git 中没有大体积音频、成片或模型；编辑完整有声工程需恢复必要输入。
+源码与本页制作过程已于 2026-10-23 随仓库公开。视频、封面及媒体校验文件仍保存在维护者草稿，尚未向访客开放下载；正式发布入口为[版本页面](https://github.com/Aaron7510/TickList-Local-Todo/releases)。Git 中没有大体积音频、成片或模型；编辑完整有声工程需恢复必要输入。
