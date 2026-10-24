@@ -32,6 +32,7 @@ TickList 是面向电脑端的轻量待办网页：无需注册，任务保存�
 
 - [下载应用离线 ZIP](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-v0.1.0.zip) · [ZIP 的 SHA-256 校验文件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-v0.1.0.zip.sha256)
 - [下载 35 秒宣传片 MP4](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-35s-1080p60.mp4) · [下载横版封面](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-Cover-1920x1080.jpg) · [媒体校验文件](https://github.com/Aaron7510/TickList-Local-Todo/releases/download/v0.1.0/TickList-Promo-SHA256SUMS.txt)
+- 多比例封面：[4:3 横屏 / 9:16 竖屏](marketing/video/covers/2026-10-23/README.md) · [3:4](marketing/video/covers/2026-10-23-3x4/README.md)（仓库直接下载）
 - [阅读宣传视频制作过程](marketing/video/制作过程.md) · [正式附件验收记录](docs/release/正式发布验收-2026-10-23.md)
 
 完整解压应用 ZIP 后打开 landing.html 或 index.html；也可通过 GitHub 的 Code → Download ZIP 获取源码。源码仓库与视频制作过程均已公开。
